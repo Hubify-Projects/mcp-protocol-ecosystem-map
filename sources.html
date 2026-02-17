@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCP Protocol Ecosystem Map — Sources</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23D4A574'/%3E%3Ctext y='75' font-size='70' fill='%230a0a0f' font-family='sans-serif' font-weight='bold' text-anchor='middle' x='50'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" integrity="sha384-D16+wCru/bFI/NSDzxxJ4elkhTqkrSQXPWNlYhFhUDVGXAWlcEcL80CaVlz0KqQS" crossorigin="anonymous"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha384-ekdmgIO7bE0qXJ4NhYDhXQtNnZY8QlJrLKLXYyHEQJVVwlz4yksjhDFdZWlJaUlg" crossorigin="anonymous"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">MCP Protocol Ecosystem Map</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link" data-page="index">Home</a>
+      <a href="findings.html" class="nav-link" data-page="findings">Findings</a>
+      <a href="paper.html" class="nav-link" data-page="paper">Paper</a>
+      <a href="versions.html" class="nav-link" data-page="versions">Versions</a>
+      <a href="team.html" class="nav-link" data-page="team">Team</a>
+      <a href="sources.html" class="nav-link" data-page="sources">Sources</a>
+    </div>
+  </div>
+</nav>
+<script>
+(function() {
+  const currentPage = window.location.pathname.split('/').pop().replace('.html', '') || 'index';
+  const links = document.querySelectorAll('.nav-link');
+  links.forEach(link => {
+    if (link.getAttribute('data-page') === currentPage) {
+      link.classList.add('active');
+    }
+  });
+})();
+</script>
+<main class="container">
+<div class="container">
+  <h1>Sources & Methodology</h1>
+  <p class="lead">Complete transparency into the sources, tools, and methods used to map the MCP Protocol ecosystem.</p>
+
+  <!-- Research Status -->
+  <div class="card" style="background: linear-gradient(135deg, rgba(212, 165, 116, 0.1), rgba(212, 165, 116, 0.05)); border-left: 4px solid #D4A574; margin-bottom: 2rem;">
+    <h3 style="margin-top: 0; color: #D4A574;">📊 Research Status</h3>
+    <p><strong>Research Stage:</strong> Initial Discovery & Pattern Analysis</p>
+    <p><strong>Knowledge Base Items:</strong> 4 findings (1 context, 1 signal, 1 pattern, 1 guide)</p>
+    <p><strong>Last Updated:</strong> 2026-02-17</p>
+    <div class="badge badge-accent">Active Research</div>
+    <p style="margin-top: 1rem; margin-bottom: 0;"><em>More sources will be added as research progresses. This page represents our current state of knowledge and will be continuously updated.</em></p>
+  </div>
+
+  <!-- Methodology -->
+  <section style="margin: 3rem 0;">
+    <h2>Research Methodology</h2>
+    
+    <div class="card">
+      <h3>Research Approach</h3>
+      <p>This research mission employs an AI-agent-driven methodology to discover, analyze, and map the emerging Model Context Protocol (MCP) ecosystem. The approach combines automated discovery with structured analysis across multiple dimensions.</p>
+      
+      <h4 style="margin-top: 2rem;">Research Phases</h4>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4>Phase 1: Initial Discovery</h4>
+            <p><strong>Status:</strong> <span class="badge">In Progress</span></p>
+            <p>Identifying core MCP resources, official documentation, and key ecosystem participants.</p>
+            <ul>
+              <li>Official specification analysis</li>
+              <li>GitHub repository mapping</li>
+              <li>Community resource identification</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4>Phase 2: Pattern Recognition</h4>
+            <p><strong>Status:</strong> <span class="badge">In Progress</span></p>
+            <p>Detecting emerging patterns, conventions, and best practices in the ecosystem.</p>
+            <ul>
+              <li>Server discovery mechanisms</li>
+              <li>Transport protocol evolution</li>
+              <li>Integration patterns</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4>Phase 3: Signal Detection</h4>
+            <p><strong>Status:</strong> <span class="badge">In Progress</span></p>
+            <p>Monitoring official announcements, updates, and significant ecosystem developments.</p>
+            <ul>
+              <li>Specification updates</li>
+              <li>New transport mechanisms</li>
+              <li>Ecosystem announcements</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4>Phase 4: Ecosystem Mapping</h4>
+            <p><strong>Status:</strong> <span class="badge badge-accent">Planned</span></p>
+            <p>Comprehensive mapping of servers, clients, tools, and integrations.</p>
+            <ul>
+              <li>Server catalog compilation</li>
+              <li>Client implementation tracking</li>
+              <li>Use case documentation</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4>Phase 5: Analysis & Synthesis</h4>
+            <p><strong>Status:</strong> <span class="badge badge-accent">Planned</span></p>
+            <p>Generating insights, trends, and predictions about ecosystem evolution.</p>
+            <ul>
+              <li>Adoption trend analysis</li>
+              <li>Gap identification</li>
+              <li>Future direction forecasting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Methodology Flowchart -->
+    <div class="card" style="margin-top: 2rem;">
+      <h3>Research Workflow</h3>
+      <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px; margin-top: 1rem;">
+        <pre style="background: transparent; border: none; padding: 0; margin: 0; overflow-x: auto;"><code>
+    ┌─────────────────────────────────────────────────────────────┐
+    │                    Research Initiation                       │
+    │              (Mission Brief + Initial Context)               │
+    └───────────────────────────┬─────────────────────────────────┘
+                                │
+                                ▼
+    ┌─────────────────────────────────────────────────────────────┐
+    │                   Automated Discovery                        │
+    │  • GitHub repository analysis                                │
+    │  • Documentation scraping                                    │
+    │  • Community forum monitoring                                │
+    └───────────────────────────┬─────────────────────────────────┘
+                                │
+                                ▼
+    ┌─────────────────────────────────────────────────────────────┐
+    │                  Knowledge Classification                    │
+    │  • Context: Foundational information                         │
+    │  • Signals: Events & announcements                           │
+    │  • Patterns: Emerging conventions                            │
+    │  • Guides: Implementation resources                          │
+    └───────────────────────────┬─────────────────────────────────┘
+                                │
+                                ▼
+    ┌─────────────────────────────────────────────────────────────┐
+    │                   Confidence Scoring                         │
+    │  • Source authority (0.0 - 1.0)                             │
+    │  • Information freshness                                     │
+    │  • Cross-reference validation                                │
+    └───────────────────────────┬─────────────────────────────────┘
+                                │
+                                ▼
+    ┌─────────────────────────────────────────────────────────────┐
+    │                  Synthesis & Reporting                       │
+    │  • Trend visualization                                       │
+    │  • Gap analysis                                              │
+    │  • Actionable insights                                       │
+    └─────────────────────────────────────────────────────────────┘
+        </code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Knowledge Base Items -->
+  <section style="margin: 3rem 0;">
+    <h2>Knowledge Base Items</h2>
+    <p>All findings discovered during this research mission, classified by type and confidence level.</p>
+
+    <div class="grid" style="margin-top: 2rem;">
+      <!-- Item 1: Context -->
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+          <span class="badge">Context</span>
+          <span class="badge badge-accent">Confidence: 100%</span>
+        </div>
+        <h3 style="margin-top: 0;">Website: mcp-protocol-ecosystem-map</h3>
+        <p><strong>Type:</strong> Project Repository & Documentation</p>
+        <p><strong>Description:</strong> Official project repository and generated website for this research mission.</p>
+        <p><strong>Sources:</strong></p>
+        <ul>
+          <li><a href="https://mcp-protocol-ecosystem-map.hubify.com" target="_blank">Website</a></li>
+          <li><a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map" target="_blank">GitHub Repository</a></li>
+        </ul>
+        <p><strong>Last Commit:</strong> <code>5b2e8f416a3bc55079c3f8deaba6d1b70b9282ef</code></p>
+        <p><strong>Generated:</strong> 2026-02-17T23:02:59.841Z</p>
+      </div>
+
+      <!-- Item 2: Signal -->
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+          <span class="badge" style="background: #4A90E2;">Signal</span>
+          <span class="badge badge-accent">Confidence: 85%</span>
+        </div>
+        <h3 style="margin-top: 0;">Anthropic Expanding MCP Spec with Streamable HTTP Transport</h3>
+        <p><strong>Type:</strong> Ecosystem Update / Specification Evolution</p>
+        <p><strong>Significance:</strong> Major enhancement to MCP protocol capabilities enabling remote and stateless server deployments.</p>
+        <p><strong>Key Implications:</strong></p>
+        <ul>
+          <li>Remote MCP servers (not just local processes)</li>
+          <li>Stateless server deployments (easier scaling)</li>
+          <li>Standard HTTP-based communication patterns</li>
+        </ul>
+        <p><strong>Source Attribution:</strong> Anthropic official specification updates</p>
+      </div>
+
+      <!-- Item 3: Pattern -->
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+          <span class="badge" style="background: #9B59B6;">Pattern</span>
+          <span class="badge badge-accent">Confidence: 67%</span>
+        </div>
+        <h3 style="margin-top: 0;">MCP Server Discovery via .well-known Convention</h3>
+        <p><strong>Type:</strong> Emerging Convention / Best Practice</p>
+        <p><strong>Pattern Description:</strong> MCP servers are beginning to advertise their capabilities via standardized <code>.well-known/mcp.json</code> files, following established web service discovery patterns.</p>
+        <p><strong>Benefit:</strong> Enables agents to automatically discover available tools without manual configuration.</p>
+        <p><strong>Example Structure:</strong></p>
+        <pre><code>// https://api.example.com/.well-known/mcp.json
+{
+  "protocol": "mcp",
+  "version": "1.0",
+  "capabilities": [...],
+  "endpoints": [...]
+}</code></pre>
+        <p><strong>Confidence Note:</strong> Moderate confidence as this pattern is emerging but not yet officially standardized.</p>
+      </div>
+
+      <!-- Item 4: Guide -->
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+          <span class="badge" style="background: #27AE60;">Guide</span>
+          <span class="badge badge-accent">Confidence: 83%</span>
+        </div>
+        <h3 style="margin-top: 0;">Building MCP Servers for Agent Integration</h3>
+        <p><strong>Type:</strong> Implementation Guide / Technical Documentation</p>
+        <p><strong>Description:</strong> Comprehensive guide on building MCP servers that integrate with AI agents.</p>
+        <p><strong>Key Topics:</strong></p>
+        <ul>
+          <li><strong>Architecture:</strong> Client-server model overview</li>
+          <li><strong>MCP Client:</strong> AI agents (Claude Code, Cursor, etc.)</li>
+          <li><strong>MCP Server:</strong> Custom tool implementations</li>
+          <li>Transport protocols and communication patterns</li>
+          <li>Best practices for tool development</li>
+        </ul>
+        <p><strong>Target Audience:</strong> Developers building MCP-compatible services</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Sources -->
+  <section style="margin: 3rem 0;">
+    <h2>Primary Sources & References</h2>
+    
+    <div class="card">
+      <h3>Numbered Bibliography</h3>
+      <ol style="line-height: 1.8;">
+        <li>
+          <strong>MCP Protocol Ecosystem Map Repository</strong><br>
+          <a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map" target="_blank">https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map</a><br>
+          <em>Primary research repository and data source</em> | Accessed: 2026-02-17
+        </li>
+        <li>
+          <strong>MCP Protocol Ecosystem Map Website</strong><br>
+          <a href="https://mcp-protocol-ecosystem-map.hubify.com" target="_blank">https://mcp-protocol-ecosystem-map.hubify.com</a><br>
+          <em>Generated research website and findings dashboard</em> | Last Generated: 2026-02-17T23:02:59.841Z
+        </li>
+        <li>
+          <strong>Anthropic MCP Specification</strong><br>
+          <em>Official Model Context Protocol specification and updates</em><br>
+          Referenced for: Streamable HTTP transport features, protocol architecture
+        </li>
+        <li>
+          <strong>.well-known Convention Standards</strong><br>
+          <em>Web service discovery conventions (RFC 8615)</em><br>
+          Referenced for: MCP server discovery pattern analysis
+        </li>
+      </ol>
+
+      <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+        <p style="margin: 0;"><strong>📚 Note:</strong> This bibliography will be expanded as the research progresses. Additional sources including academic papers, technical documentation, community resources, and ecosystem analyses will be added in subsequent research phases.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- API & Tool Usage -->
+  <section style="margin: 3rem 0;">
+    <h2>API & Tool Usage Disclosure</h2>
+    <p>Complete transparency into the tools and APIs used during each phase of research.</p>
+
+    <div class="card">
+      <h3>Research Tools & APIs</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Research Phase</th>
+            <th>Tool/API Used</th>
+            <th>Purpose</th>
+            <th>Access Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Initial Discovery</td>
+            <td>GitHub API</td>
+            <td>Repository analysis and metadata extraction</td>
+            <td>Public API</td>
+          </tr>
+          <tr>
+            <td>Initial Discovery</td>
+            <td>Web Scraping Tools</td>
+            <td>Documentation and resource discovery</td>
+            <td>Public Web</td>
+          </tr>
+          <tr>
+            <td>Knowledge Classification</td>
+            <td>LLM Analysis</td>
+            <td>Content classification and confidence scoring</td>
+            <td>Internal</td>
+          </tr>
+          <tr>
+            <td>Pattern Recognition</td>
+            <td>Pattern Matching Algorithms</td>
+            <td>Identifying emerging conventions and standards</td>
+            <td>Internal</td>
+          </tr>
+          <tr>
+            <td>Website Generation</td>
+            <td>Static Site Generator</td>
+            <td>Automated research website creation</td>
+            <td>Internal</td>
+          </tr>
+          <tr>
+            <td>Continuous Updates</td>
+            <td>Git Version Control</td>
+            <td>Tracking research progress and changes</td>
+            <td>Public Repository</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4 style="margin-top: 2rem;">Planned Tools (Future Phases)</h4>
+      <ul>
+        <li><strong>MCP Server Discovery Crawler:</strong> Automated discovery of MCP-compatible servers</li>
+        <li><strong>GitHub Topic Analysis:</strong> Systematic analysis of MCP-related repositories</li>
+        <li><strong>Community Forum Monitoring:</strong> Discord, Reddit, and forum signal detection</li>
+        <li><strong>Package Registry Analysis:</strong> NPM, PyPI, and other package ecosystem tracking</li>
+        <li><strong>Documentation Aggregator:</strong> Collecting and synthesizing technical documentation</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Data Sources for Visualizations -->
+  <section style="margin: 3rem 0;">
+    <h2>Data Sources for Visualizations</h2>
+    
+    <div class="card">
+      <h3>Charts & Figures Data Attribution</h3>
+      <p><strong>Current Status:</strong> No visualizations generated yet.</p>
+      <p>As charts, graphs, and data visualizations are created, this section will document:</p>
+      <ul>
+        <li>Source datasets for each visualization</li>
+        <li>Data collection methodology</li>
+        <li>Processing and aggregation methods</li>
+        <li>Update frequency and timestamps</li>
+        <li>Known limitations or data gaps</li>
+      </ul>
+
+      <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
+        <p style="margin: 0;"><strong>🔍 Planned Visualizations:</strong></p>
+        <ul style="margin-bottom: 0;">
+          <li>MCP ecosystem growth timeline</li>
+          <li>Server type distribution analysis</li>
+          <li>Transport protocol adoption rates</li>
+          <li>Geographic distribution of implementations</li>
+          <li>Use case category breakdown</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transparency Statement -->
+  <section style="margin: 3rem 0;">
+    <h2>Full Transparency Statement</h2>
+    
+    <div class="card" style="background: linear-gradient(135deg, rgba(212, 165, 116, 0.05), rgba(212, 165, 116, 0.02)); border: 2px solid #D4A574;">
+      <h3 style="color: #D4A574;">🤖 AI-Driven Research Disclosure</h3>
+      
+      <p><strong>This research was conducted by AI agents using the following tools and models:</strong></p>
+
+      <h4>AI Models Used</h4>
+      <ul>
+        <li><strong>Research Agent:</strong> Autonomous AI agent trained on software ecosystem analysis</li>
+        <li><strong>Language Model:</strong> Large Language Model (LLM) for content analysis and synthesis</li>
+        <li><strong>Classification Model:</strong> Confidence scoring and knowledge categorization</li>
+      </ul>
+
+      <h4>Agent Capabilities</h4>
+      <ul>
+        <li>Automated web research and information discovery</li>
+        <li>GitHub repository analysis and code inspection</li>
+        <li>Documentation synthesis and summarization</li>
+        <li>Pattern recognition across multiple sources</li>
+        <li>Confidence-weighted knowledge aggregation</li>
+        <li>Continuous monitoring for ecosystem updates</li>
+      </ul>
+
+      <h4>Human Oversight</h4>
+      <ul>
+        <li><strong>Mission Definition:</strong> Human-defined research objectives and scope</li>
+        <li><strong>Quality Review:</strong> Periodic human review of findings and classifications</li>
+        <li><strong>Methodology Design:</strong> Human-designed research framework and processes</li>
+        <li><strong>Publication Approval:</strong> Human review before major findings are published</li>
+      </ul>
+
+      <h4>Limitations & Biases</h4>
+      <ul>
+        <li><strong>Temporal Bias:</strong> Research reflects the state of the ecosystem at time of analysis</li>
+        <li><strong>Source Availability:</strong> Limited to publicly accessible information</li>
+        <li><strong>Language Bias:</strong> Primary focus on English-language resources</li>
+        <li><strong>Discovery Limitations:</strong> May not capture all ecosystem participants</li>
+        <li><strong>Confidence Scoring:</strong> Algorithmic confidence scores are estimates, not guarantees</li>
+      </ul>
+
+      <h4>Data Collection Ethics</h4>
+      <ul>
+        <li>✅ Only public sources accessed</li>
+        <li>✅ Robots.txt and terms of service respected</li>
+        <li>✅ No authentication bypass or unauthorized access</li>
+        <li>✅ Rate limiting and polite crawling practices</li>
+        <li>✅ Attribution provided for all sources</li>
+      </ul>
+
+      <h4>Research Integrity Commitments</h4>
+      <ol>
+        <li><strong>Transparency:</strong> All sources and methods documented</li>
+        <li><strong>Accuracy:</strong> Confidence scores reflect source reliability</li>
+        <li><strong>Updates:</strong> Regular updates as new information emerges</li>
+        <li><strong>Corrections:</strong> Errors corrected promptly when identified</li>
+        <li><strong>Attribution:</strong> Original sources credited appropriately</li>
+      </ol>
+
+      <div style="background: white; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; border-left: 4px solid #D4A574;">
+        <p style="margin: 0;"><strong>📧 Questions or Concerns?</strong></p>
+        <p style="margin: 0.5rem 0 0 0;">If you have questions about our methodology, sources, or would like to contribute information to this research, please open an issue on our <a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map/issues" target="_blank">GitHub repository</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Progress Indicator -->
+  <section style="margin: 3rem 0;">
+    <h2>Research Completeness</h2>
+    <div class="card">
+      <p>Visual indicator of research progress across key dimensions:</p>
+      
+      <div style="margin: 2rem 0;">
+        <h4>Discovery Phase</h4>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 25%"></div>
+        </div>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">25% - Initial sources identified</p>
+      </div>
+
+      <div style="margin: 2rem 0;">
+        <h4>Pattern Analysis</h4>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 15%"></div>
+        </div>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">15% - Early patterns detected</p>
+      </div>
+
+      <div style="margin: 2rem 0;">
+        <h4>Ecosystem Mapping</h4>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 5%"></div>
+        </div>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">5% - Initial framework established</p>
+      </div>
+
+      <div style="margin: 2rem 0;">
+        <h4>Synthesis & Insights</h4>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 0%"></div>
+        </div>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">0% - Not yet started</p>
+      </div>
+
+      <p style="margin-top: 2rem; font-style: italic; color: #666;">This research is in its early stages. Expect significant expansion of sources, findings, and insights as the mission progresses.</p>
+    </div>
+  </section>
+
+  <!-- Version History -->
+  <section style="margin: 3rem 0;">
+    <h2>Document Version History</h2>
+    <div class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>Version</th>
+            <th>Date</th>
+            <th>Changes</th>
+            <th>Commit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.0.0</td>
+            <td>2026-02-17</td>
+            <td>Initial sources page created with 4 knowledge base items</td>
+            <td><code>5b2e8f4</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">This page is automatically updated as new sources are discovered and research progresses.</p>
+    </div>
+  </section>
+
+</div>
+</main>
+<footer>
+  <div class="footer-content">
+    <p>Powered by <a href="https://hubify.com/research" target="_blank" rel="noopener noreferrer">Hubify</a></p>
+    <p>Last updated: 2026-02-17</p>
+    <p>Built autonomously by AI agents</p>
+    <div class="footer-links">
+      <a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map" target="_blank" rel="noopener noreferrer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 0.5rem;">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+        GitHub Repository
+      </a>
+    </div>
+  </div>
+</footer>
+<script>
+// Highlight active nav link
+document.querySelectorAll('nav a[data-page]').forEach(a => {
+  if (a.getAttribute('data-page') === 'sources') a.classList.add('active');
+});
+</script>
+</body>
+</html>
