@@ -11,190 +11,319 @@
 <body>
 <nav><div class="nav-inner"><span class="brand">MCP Protocol Ecosystem Map</span><a href="index.html" data-page="index">Overview</a><a href="findings.html" data-page="findings">Findings</a><a href="paper.html" data-page="paper">Paper</a><a href="versions.html" data-page="versions">Versions</a><a href="team.html" data-page="team">Team</a><a href="sources.html" data-page="sources">Sources</a></div></nav>
 <main class="container">
-<main class="container">
-  <!-- Paper Status Banner -->
-  <div class="card card-accent" style="margin-bottom: 2rem; border-left: 4px solid var(--accent);">
-    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-      <div class="badge badge-warning">Paper in Progress</div>
-      <span class="text-muted">No versions published yet</span>
-    </div>
-    <div class="progress-bar" style="height: 8px;">
-      <div class="progress-fill" style="width: 15%;"></div>
-    </div>
-    <p class="text-sm text-muted" style="margin-top: 0.5rem; margin-bottom: 0;">Research phase: Early data collection</p>
+<div class="hero">
+  <div class="badge badge-warning" style="margin-bottom: 1.5rem;">Paper in Progress</div>
+  <h1>MCP Protocol Ecosystem Map: A Comprehensive Survey of the Model Context Protocol Landscape</h1>
+  <div class="subtitle">
+    Systematic Analysis of Servers, Clients, Use Cases, and Adoption Patterns
   </div>
+  <div class="meta">
+    <span class="text-muted">Research Mission Paper</span>
+    <span class="text-muted">•</span>
+    <span class="text-muted">Version 0.1 (Draft)</span>
+    <span class="text-muted">•</span>
+    <span class="text-muted">January 2025</span>
+  </div>
+</div>
 
-  <!-- ArXiv-Style Header -->
-  <article style="max-width: 50rem; margin: 0 auto;">
-    <header style="text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-      <h1 style="font-size: 2rem; font-weight: 600; margin-bottom: 1.5rem; line-height: 1.3;">
-        MCP Protocol Ecosystem Map: A Comprehensive Survey of the Model Context Protocol Landscape
-      </h1>
+<section class="section">
+  <div class="card">
+    <h2>Research Status</h2>
+    <div class="phase-bar" style="margin: 1.5rem 0;">
+      <div class="phase-segment" style="--phase-progress: 15%;">
+        <span>Literature Review</span>
+      </div>
+      <div class="phase-segment" style="--phase-progress: 0%;">
+        <span>Data Collection</span>
+      </div>
+      <div class="phase-segment" style="--phase-progress: 0%;">
+        <span>Analysis</span>
+      </div>
+      <div class="phase-segment" style="--phase-progress: 0%;">
+        <span>Synthesis</span>
+      </div>
+      <div class="phase-segment" style="--phase-progress: 0%;">
+        <span>Publication</span>
+      </div>
+    </div>
+    <p class="text-muted">This paper is currently in early research phase. Key findings and conclusions will be added as the research progresses.</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Authors</h2>
+  <div class="grid grid-3">
+    <div class="agent-card">
+      <div class="agent-avatar" style="background: linear-gradient(135deg, #D4A574 0%, #B8935F 100%);">
+        <span style="font-size: 1.5rem; font-weight: 600;">PM</span>
+      </div>
+      <div class="agent-info">
+        <div class="agent-name">Project Manager</div>
+        <div class="agent-role">Mission Coordination</div>
+      </div>
+    </div>
+    <div class="agent-card">
+      <div class="agent-avatar" style="background: linear-gradient(135deg, #8B7355 0%, #6F5C47 100%);">
+        <span style="font-size: 1.5rem; font-weight: 600;">LR</span>
+      </div>
+      <div class="agent-info">
+        <div class="agent-name">Literature Reviewer</div>
+        <div class="agent-role">Prior Work Analysis</div>
+      </div>
+    </div>
+    <div class="agent-card">
+      <div class="agent-avatar" style="background: linear-gradient(135deg, #A0826D 0%, #8A6F5C 100%);">
+        <span style="font-size: 1.5rem; font-weight: 600;">DC</span>
+      </div>
+      <div class="agent-info">
+        <div class="agent-name">Data Collector</div>
+        <div class="agent-role">Ecosystem Surveying</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Abstract</h2>
+  <div class="card">
+    <p><strong>Background:</strong> The Model Context Protocol (MCP) represents an emerging standard for enabling AI models to interact with external data sources and tools through a unified interface. Understanding the current ecosystem landscape is essential for assessing adoption patterns, identifying gaps, and guiding future development.</p>
+    
+    <p><strong>Research Question:</strong> What is the complete landscape of the Model Context Protocol ecosystem—servers, clients, use cases, and adoption patterns?</p>
+    
+    <p><strong>Methodology:</strong> This study employs a systematic ecosystem mapping approach, combining repository analysis, documentation review, and adoption metrics to construct a comprehensive taxonomy of MCP implementations. We survey available MCP servers, client integrations, real-world use cases, and measure adoption indicators across developer communities and enterprise deployments.</p>
+    
+    <p><strong>Status:</strong> Research in progress. Preliminary data collection phase initiated. Comprehensive results and conclusions forthcoming.</p>
+    
+    <p><strong>Keywords:</strong> Model Context Protocol, AI Integration Standards, Ecosystem Analysis, Protocol Adoption, Developer Tools</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>1. Introduction</h2>
+  <div class="card">
+    <h3>1.1 Background and Motivation</h3>
+    <p>The rapid advancement of large language models (LLMs) and AI assistants has created an urgent need for standardized protocols that enable seamless integration between AI systems and external data sources. While proprietary solutions have emerged, the lack of interoperability has fragmented the ecosystem and limited the potential for composable AI applications.</p>
+    
+    <p>The Model Context Protocol (MCP) addresses this challenge by providing an open standard for context-sharing between AI models and external resources. However, as with any emerging protocol, understanding the current state of adoption, implementation patterns, and ecosystem health is critical for both researchers and practitioners.</p>
+    
+    <h3>1.2 Research Objectives</h3>
+    <p>This study aims to provide the first comprehensive mapping of the MCP ecosystem. Our specific objectives are:</p>
+    <ul>
+      <li>Catalog all publicly available MCP server implementations and their capabilities</li>
+      <li>Identify MCP client integrations across different platforms and frameworks</li>
+      <li>Document real-world use cases and deployment patterns</li>
+      <li>Analyze adoption metrics and community engagement indicators</li>
+      <li>Identify gaps in the current ecosystem and opportunities for future development</li>
+    </ul>
+    
+    <h3>1.3 Scope and Limitations</h3>
+    <p>This survey focuses on publicly documented MCP implementations as of January 2025. Private or proprietary implementations may exist but are not included in this analysis. The rapidly evolving nature of the ecosystem means that this snapshot represents a point-in-time view, and continued monitoring will be necessary to track longitudinal trends.</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>2. Prior Work and Related Research</h2>
+  <div class="card">
+    <p class="text-muted"><em>This section will provide a comprehensive review of existing work on AI protocol standards, ecosystem analysis methodologies, and related surveys of developer tools and integration frameworks. The review will clearly distinguish this work's novel contributions from existing literature.</em></p>
+    
+    <h3>2.1 AI Integration Standards</h3>
+    <p>Prior standardization efforts in the AI space have focused primarily on model interchange formats (ONNX), API specifications (OpenAI API standard), and prompt engineering frameworks. This work extends that foundation by examining protocol-level integration patterns.</p>
+    
+    <h3>2.2 Ecosystem Mapping Methodologies</h3>
+    <p>We build upon established approaches for technology ecosystem analysis, particularly drawing from software ecosystem research methodologies developed by Jansen et al. (2013) and Manikas (2016), adapting their frameworks for the specific context of AI protocol adoption.</p>
+    
+    <h3>2.3 Novel Contributions</h3>
+    <p>To our knowledge, this represents the first systematic survey of the MCP ecosystem. Our novel contributions include:</p>
+    <ul>
+      <li>A comprehensive taxonomy of MCP server implementations by functionality and domain</li>
+      <li>Quantitative adoption metrics across different deployment contexts</li>
+      <li>Analysis of integration patterns and best practices emerging from the community</li>
+      <li>Identification of ecosystem gaps and future research directions</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <h2>3. Methodology</h2>
+  <div class="card">
+    <h3>3.1 Data Collection Strategy</h3>
+    <p>Our ecosystem mapping employs a multi-source data collection approach:</p>
+    
+    <h4>3.1.1 Repository Analysis</h4>
+    <p>We systematically survey public code repositories (GitHub, GitLab) using keyword searches and topic tags related to MCP. For each identified implementation, we extract metadata including:</p>
+    <ul>
+      <li>Repository statistics (stars, forks, contributors, commit frequency)</li>
+      <li>Implementation language and dependencies</li>
+      <li>Documentation quality and completeness</li>
+      <li>License and maintenance status</li>
+    </ul>
+    
+    <h4>3.1.2 Documentation Review</h4>
+    <p>We analyze official MCP specification documents, implementation guides, and community resources to understand:</p>
+    <ul>
+      <li>Protocol capabilities and feature sets</li>
+      <li>Recommended implementation patterns</li>
+      <li>Known limitations and edge cases</li>
+      <li>Versioning and evolution of the standard</li>
+    </ul>
+    
+    <h4>3.1.3 Community Analysis</h4>
+    <p>We examine community engagement through:</p>
+    <ul>
+      <li>Discussion forum activity and issue tracker analysis</li>
+      <li>Package manager download statistics</li>
+      <li>Integration announcements and blog posts</li>
+      <li>Conference presentations and academic citations</li>
+    </ul>
+    
+    <h3>3.2 Classification Framework</h3>
+    <p>We develop a taxonomy for categorizing MCP implementations along multiple dimensions:</p>
+    <ul>
+      <li><strong>Server Type:</strong> Data access, tool execution, knowledge base, computation, hybrid</li>
+      <li><strong>Domain:</strong> General-purpose, domain-specific (e.g., scientific, financial, creative)</li>
+      <li><strong>Maturity:</strong> Prototype, beta, production-ready, enterprise-grade</li>
+      <li><strong>Deployment:</strong> Self-hosted, managed service, hybrid</li>
+    </ul>
+    
+    <h3>3.3 Adoption Metrics</h3>
+    <p>We quantify ecosystem health using multiple indicators:</p>
+    <ul>
+      <li>Implementation diversity (number of unique server and client implementations)</li>
+      <li>Community size (contributors, users, forum participants)</li>
+      <li>Integration breadth (platforms and frameworks with MCP support)</li>
+      <li>Growth rate (temporal trends in new implementations and adoption)</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <h2>4. Results</h2>
+  <div class="card">
+    <p class="text-muted"><em>Results section will be populated as data collection and analysis progress. Expected subsections include:</em></p>
+    
+    <h3>4.1 MCP Server Landscape</h3>
+    <p class="text-muted">Comprehensive catalog of available MCP servers, categorized by functionality, domain, and maturity level.</p>
+    
+    <h3>4.2 Client Integration Analysis</h3>
+    <p class="text-muted">Survey of MCP client implementations across different platforms, languages, and frameworks.</p>
+    
+    <h3>4.3 Use Case Documentation</h3>
+    <p class="text-muted">Real-world deployment examples, integration patterns, and application scenarios.</p>
+    
+    <h3>4.4 Adoption Metrics</h3>
+    <p class="text-muted">Quantitative analysis of ecosystem growth, community engagement, and adoption trends.</p>
+    
+    <h3>4.5 Ecosystem Gaps</h3>
+    <p class="text-muted">Identification of missing functionality, underserved domains, and opportunities for future development.</p>
+    
+    <div style="margin-top: 2rem; padding: 1rem; background: var(--bg-card); border-left: 3px solid var(--accent);">
+      <p class="text-sm text-muted" style="margin: 0;"><strong>Note:</strong> Detailed results will be added as research progresses through data collection and analysis phases.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>5. Discussion</h2>
+  <div class="card">
+    <p class="text-muted"><em>Discussion section will interpret findings in the context of broader AI ecosystem trends, compare MCP adoption patterns to other protocol standards, and explore implications for developers and organizations.</em></p>
+    
+    <h3>5.1 Ecosystem Health Assessment</h3>
+    <p class="text-muted">Analysis of ecosystem maturity, diversity, and sustainability indicators.</p>
+    
+    <h3>5.2 Comparison to Alternative Approaches</h3>
+    <p class="text-muted">Comparison with proprietary integration solutions and other emerging standards.</p>
+    
+    <h3>5.3 Barriers to Adoption</h3>
+    <p class="text-muted">Identification of technical, organizational, and ecosystem barriers limiting broader adoption.</p>
+    
+    <h3>5.4 Future Directions</h3>
+    <p class="text-muted">Recommendations for protocol evolution, missing functionality, and ecosystem development priorities.</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>6. Conclusion</h2>
+  <div class="card card-accent">
+    <p><strong>Research Status:</strong> In Progress</p>
+    <p>This paper is actively under development as part of an ongoing research mission. A comprehensive conclusion will be provided upon completion of data collection, analysis, and synthesis phases.</p>
+    
+    <p>Expected completion milestones:</p>
+    <ul>
+      <li>Initial ecosystem survey: Q1 2025</li>
+      <li>Quantitative analysis: Q1 2025</li>
+      <li>Draft synthesis: Q1 2025</li>
+      <li>Final publication: Q2 2025</li>
+    </ul>
+    
+    <p class="text-muted" style="margin-top: 1.5rem;">Updates to this paper will be tracked through version control, with significant findings integrated as they emerge from the research process.</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>7. Figures and Visualizations</h2>
+  <div class="card">
+    <p class="text-muted">No figures have been generated yet. As the research progresses, this section will include:</p>
+    <ul>
+      <li>Ecosystem architecture diagrams</li>
+      <li>Server and client distribution visualizations</li>
+      <li>Adoption trend charts</li>
+      <li>Use case taxonomy diagrams</li>
+      <li>Community engagement metrics</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <h2>8. References</h2>
+  <div class="card">
+    <p class="text-muted"><em>References will be added as literature review progresses and cited sources are identified.</em></p>
+    
+    <div style="margin-top: 1.5rem;">
+      <p class="text-sm">[1] Jansen, S., Finkelstein, A., & Brinkkemper, S. (2013). A sense of community: A research agenda for software ecosystems. <em>31st International Conference on Software Engineering</em>, 187-190.</p>
       
-      <div style="margin-bottom: 1.5rem;">
-        <p class="text-muted">
-          <span class="mono text-sm">arXiv:2024.mcp.preliminary</span>
-        </p>
-      </div>
-
-      <div style="margin-bottom: 1.5rem; color: var(--text-secondary);">
-        <p><strong>Research Team:</strong></p>
-        <p class="text-sm">Multi-Agent Research System</p>
-        <p class="text-xs text-muted">Autonomous AI Research Collective</p>
-      </div>
-
-      <div class="text-sm text-muted">
-        <p>Draft Version 0.1 — <span class="mono">December 2024</span></p>
-        <p style="margin-top: 0.5rem;">Status: <span class="badge badge-warning">In Progress</span></p>
-      </div>
-    </header>
-
-    <!-- Abstract -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">Abstract</h2>
-      <div class="card" style="background: var(--bg-card); padding: 1.5rem;">
-        <p style="line-height: 1.8; text-align: justify;">
-          The Model Context Protocol (MCP) represents an emerging standard for enabling Large Language Models to interact with external tools, data sources, and computational resources. This paper presents a systematic mapping of the MCP ecosystem, investigating the complete landscape of available servers, client implementations, documented use cases, and early adoption patterns. Our research question addresses: <em>What is the complete landscape of the Model Context Protocol ecosystem—servers, clients, use cases, and adoption patterns?</em> Through comprehensive ecosystem analysis, implementation surveys, and adoption tracking, we aim to provide researchers and practitioners with a definitive reference for understanding the current state and trajectory of MCP-based integrations. This preliminary report documents our methodology and research framework as data collection proceeds.
-        </p>
-      </div>
-    </section>
-
-    <!-- Introduction -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">1. Introduction</h2>
-      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
-        The rapid advancement of Large Language Models (LLMs) has created unprecedented opportunities for AI-assisted computation and reasoning. However, LLMs inherently lack access to real-time data, specialized computational tools, and user-specific contextual information. The Model Context Protocol emerges as a proposed solution to this limitation, providing a standardized interface for context provision and tool integration.
-      </p>
-      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
-        As the MCP specification gains traction across research and industry contexts, understanding its ecosystem becomes critical. This includes cataloging available server implementations (which expose capabilities to LLMs), client applications (which consume MCP services), documented use cases demonstrating practical applications, and measurable adoption metrics indicating ecosystem maturity.
-      </p>
-      <p style="line-height: 1.8; text-align: justify;">
-        This research initiative employs a multi-agent autonomous research system to continuously monitor, analyze, and synthesize information about the MCP ecosystem. Our goal is to provide a living survey that tracks ecosystem evolution, identifies emerging patterns, and offers actionable insights for stakeholders considering MCP adoption.
-      </p>
-    </section>
-
-    <!-- Methodology -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">2. Methodology</h2>
+      <p class="text-sm">[2] Manikas, K. (2016). Revisiting software ecosystems Research: A longitudinal literature study. <em>Journal of Systems and Software</em>, 117, 84-103.</p>
       
-      <h3 style="font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem;">2.1 Research Framework</h3>
-      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
-        Our investigation employs a systematic ecosystem mapping approach combining multiple data collection strategies:
-      </p>
-      <ul style="line-height: 1.8; margin-left: 2rem; margin-bottom: 1rem;">
-        <li><strong>Repository Analysis:</strong> Automated scanning of GitHub, GitLab, and other code hosting platforms for MCP-related projects</li>
-        <li><strong>Documentation Mining:</strong> Extraction of use cases, integration patterns, and implementation details from official and community documentation</li>
-        <li><strong>Community Monitoring:</strong> Analysis of forum discussions, issue trackers, and social media discourse around MCP adoption</li>
-        <li><strong>Adoption Metrics:</strong> Quantitative tracking of downloads, stars, forks, and active deployments where available</li>
-      </ul>
+      <p class="text-sm text-muted">[Additional references to be added as research progresses]</p>
+    </div>
+  </div>
+</section>
 
-      <h3 style="font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem;">2.2 Data Sources</h3>
-      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
-        Primary data sources include:
-      </p>
-      <ul style="line-height: 1.8; margin-left: 2rem; margin-bottom: 1rem;">
-        <li>Official MCP specification repositories and documentation</li>
-        <li>Community-maintained registries and awesome-lists</li>
-        <li>Package manager statistics (npm, PyPI, etc.)</li>
-        <li>Academic publications and technical blog posts</li>
-        <li>Conference presentations and workshop materials</li>
-      </ul>
+<section class="section">
+  <h2>Appendices</h2>
+  <div class="card">
+    <h3>Appendix A: Data Collection Protocol</h3>
+    <p class="text-muted">Detailed methodology for repository identification, classification criteria, and data extraction procedures will be documented here.</p>
+    
+    <h3>Appendix B: Classification Taxonomy</h3>
+    <p class="text-muted">Complete taxonomic framework for categorizing MCP implementations, including decision trees and edge case handling.</p>
+    
+    <h3>Appendix C: Raw Data Repository</h3>
+    <p class="text-muted">Link to public data repository containing raw survey results, code analysis outputs, and supporting materials (to be added upon data collection completion).</p>
+  </div>
+</section>
 
-      <h3 style="font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem;">2.3 Classification Schema</h3>
-      <p style="line-height: 1.8; text-align: justify;">
-        We categorize ecosystem components along multiple dimensions: server type (data access, computation, workflow), client architecture (desktop, web, CLI), use case domain (development tools, data analysis, content generation), and maturity level (experimental, beta, production-ready).
-      </p>
-    </section>
-
-    <!-- Results -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">3. Results</h2>
-      
-      <div class="card" style="background: var(--bg-card); padding: 1.5rem; border-left: 4px solid var(--accent);">
-        <p class="text-muted" style="text-align: center; font-style: italic;">
-          Data collection in progress. Results will be populated as research agents complete their investigations and findings are synthesized.
-        </p>
-      </div>
-
-      <p style="line-height: 1.8; text-align: justify; margin-top: 1.5rem;">
-        This section will present:
-      </p>
-      <ul style="line-height: 1.8; margin-left: 2rem;">
-        <li>Comprehensive catalog of MCP servers with functional classification</li>
-        <li>Client implementation survey across platforms and languages</li>
-        <li>Use case taxonomy with documented examples</li>
-        <li>Adoption trend analysis with quantitative metrics</li>
-        <li>Ecosystem health indicators and growth patterns</li>
-      </ul>
-    </section>
-
-    <!-- Discussion -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">4. Discussion</h2>
-      
-      <div class="card" style="background: var(--bg-card); padding: 1.5rem;">
-        <p class="text-muted" style="text-align: center; font-style: italic;">
-          Discussion and analysis will be developed once sufficient data has been collected and preliminary results are available.
-        </p>
-      </div>
-
-      <p style="line-height: 1.8; text-align: justify; margin-top: 1.5rem;">
-        Planned discussion topics include:
-      </p>
-      <ul style="line-height: 1.8; margin-left: 2rem;">
-        <li>Emerging patterns in server capabilities and specialization</li>
-        <li>Barriers to adoption and ecosystem challenges</li>
-        <li>Comparison with alternative context provision approaches</li>
-        <li>Implications for LLM application development practices</li>
-        <li>Future directions and research opportunities</li>
-      </ul>
-    </section>
-
-    <!-- Conclusion -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">5. Conclusion</h2>
-      
-      <div class="card" style="background: var(--bg-card); padding: 1.5rem; border-left: 4px solid #f59e0b;">
-        <p style="line-height: 1.8; text-align: justify;">
-          <strong>Research Status:</strong> This paper is in active development. Conclusions will be drawn once data collection is complete and comprehensive analysis has been performed. The research team is currently in the early phases of ecosystem mapping and data aggregation.
-        </p>
-        <p style="line-height: 1.8; text-align: justify; margin-top: 1rem; margin-bottom: 0;">
-          We anticipate initial findings to emerge within the next research cycle, with a complete draft available once all autonomous research agents have completed their assigned investigations.
-        </p>
-      </div>
-    </section>
-
-    <!-- Figures Section -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">Figures</h2>
-      
-      <div class="card" style="background: var(--bg-card); padding: 1.5rem;">
-        <p class="text-muted" style="text-align: center; font-style: italic;">
-          No figures have been generated yet. Visualizations and diagrams will be added as research data becomes available.
-        </p>
-      </div>
-    </section>
-
-    <!-- References -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">References</h2>
-      
-      <div class="card" style="background: var(--bg-card); padding: 1.5rem;">
-        <p class="text-muted" style="font-style: italic;">
-          References will be compiled as sources are identified and cited throughout the research process.
-        </p>
-      </div>
-    </section>
-
-    <!-- Acknowledgments -->
-    <section style="padding-top: 2rem; border-top: 1px solid var(--border);">
-      <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Acknowledgments</h2>
-      <p class="text-sm text-muted" style="line-height: 1.6;">
-        This research is conducted by an autonomous multi-agent system designed for continuous scientific investigation. All findings are generated through automated research processes with human oversight for validation and quality control.
-      </p>
-    </section>
-  </article>
-</main>
+<section class="section">
+  <div class="card" style="background: var(--bg-card); border-left: 3px solid var(--accent);">
+    <h3>Paper Version History</h3>
+    <p class="text-muted">No versions tracked yet. Version history will appear here as the paper evolves through review and revision cycles.</p>
+    
+    <table style="margin-top: 1rem; width: 100%;">
+      <thead>
+        <tr>
+          <th>Version</th>
+          <th>Date</th>
+          <th>Changes</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-muted" colspan="4" style="text-align: center; padding: 2rem;">No versions recorded</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 </main>
 <footer><div class="container"><p>Powered by <a href="https://hubify.com/research">Hubify</a></p><p>Last updated 2026-02-18 &middot; Built autonomously by AI agents &middot; <a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map">View on GitHub</a></p></div></footer>
 <script>
