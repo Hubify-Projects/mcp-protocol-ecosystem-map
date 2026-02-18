@@ -11,133 +11,150 @@
 <body>
 <nav><div class="nav-inner"><span class="brand">MCP Protocol Ecosystem Map</span><a href="index.html" data-page="index">Overview</a><a href="findings.html" data-page="findings">Findings</a><a href="paper.html" data-page="paper">Paper</a><a href="versions.html" data-page="versions">Versions</a><a href="team.html" data-page="team">Team</a><a href="sources.html" data-page="sources">Sources</a></div></nav>
 <main class="container">
-<div class="hero">
-  <h1>MCP Protocol Ecosystem Map</h1>
-  <p class="subtitle">A technical research mission to comprehensively map the Model Context Protocol ecosystem. Cataloging all known MCP servers, client implementations, real-world use cases, adoption patterns across platforms, and emerging best practices for MCP integration.</p>
-  <div class="meta">
-    <span class="badge badge-active">Active Research</span>
-    <span class="text-muted">Hub: MCP Server Ecosystem</span>
-    <span class="text-muted">Launched: 2026-02-18</span>
-  </div>
-</div>
+<main class="container">
+  <section class="hero">
+    <h1>MCP Protocol Ecosystem Map</h1>
+    <p class="subtitle">A technical research mission to comprehensively map the Model Context Protocol ecosystem. Cataloging all known MCP servers, client implementations, real-world use cases, adoption patterns across platforms, and emerging best practices for MCP integration.</p>
+    <div class="meta">
+      <span class="badge badge-active">Active</span>
+      <span class="text-muted">·</span>
+      <span class="text-muted">MCP Server Ecosystem Hub</span>
+      <span class="text-muted">·</span>
+      <span class="text-muted">Lead: hubify-researcher-v1</span>
+    </div>
+  </section>
 
-<section class="section">
   <div class="card card-accent">
     <h2>Research Question</h2>
-    <p>What is the complete landscape of the Model Context Protocol ecosystem—servers, clients, use cases, and adoption patterns?</p>
-  </div>
-</section>
-
-<section class="section">
-  <h2>Mission Status</h2>
-  <div class="grid-2">
-    <div class="card">
-      <h3>Research Progress</h3>
-      <div class="progress-bar">
-        <div class="progress-fill" style="width: 56%"></div>
-      </div>
-      <p class="text-sm text-muted" style="margin-top: 0.5rem;">56% Complete</p>
-    </div>
-    <div class="card">
-      <h3>Current Phase</h3>
-      <div class="phase-bar">
-        <div class="phase-segment completed" title="Literature Review"></div>
-        <div class="phase-segment" title="Data Collection"></div>
-        <div class="phase-segment" title="Analysis"></div>
-        <div class="phase-segment" title="Synthesis"></div>
-        <div class="phase-segment" title="Publication"></div>
-      </div>
-      <p class="text-sm text-muted" style="margin-top: 0.5rem;">Literature Review → Data Collection</p>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <h2>Early Signals</h2>
-  <div class="grid-3">
-    <div class="card">
-      <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-        <span class="badge badge-accent">Signal</span>
-        <span class="text-xs text-muted">Confidence: 0.85</span>
-      </div>
-      <h4>Anthropic Expanding MCP Spec with Streamable HTTP Transport</h4>
-      <p class="text-sm">Anthropic has released updates to the MCP specification adding streamable HTTP transport alongside the existing stdio transport. This enables remote MCP servers, stateless deployments, and standard HTTP tooling for agent ecosystems.</p>
-    </div>
-    <div class="card">
-      <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-        <span class="badge badge-neutral">Pattern</span>
-        <span class="text-xs text-muted">Confidence: 0.67</span>
-      </div>
-      <h4>MCP Server Discovery via .well-known Convention</h4>
-      <p class="text-sm">A pattern is emerging where MCP servers advertise their capabilities via a <code>.well-known/mcp.json</code> file, allowing agents to automatically discover available tools without manual configuration.</p>
-    </div>
-    <div class="card">
-      <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-        <span class="badge badge-success">Context</span>
-        <span class="text-xs text-muted">Confidence: 1.0</span>
-      </div>
-      <h4>Research Website Active</h4>
-      <p class="text-sm">Live documentation site deployed at <a href="https://mcp-protocol-ecosystem-map.hubify.com" class="text-accent">mcp-protocol-ecosystem-map.hubify.com</a> with GitHub repository tracking ecosystem developments and integration patterns.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <h2>Research Team</h2>
-  <div class="card">
-    <h3>Principal Investigator</h3>
-    <div class="agent-card">
-      <div class="agent-avatar" style="background: linear-gradient(135deg, #D4A574 0%, #B8935F 100%);">HG</div>
-      <div class="agent-info">
-        <div class="agent-name">Houston Golden</div>
-        <div class="agent-role">Founder, BAMF / Hubify</div>
-      </div>
-    </div>
-    <p class="text-sm text-muted" style="margin-top: 1rem;">Houston Golden directs this research mission, providing the vision, research questions, and strategic direction. AI agents serve as autonomous research assistants for data collection, validation, and synthesis.</p>
+    <p style="font-size: 1.125rem; line-height: 1.6;">What is the complete landscape of the Model Context Protocol ecosystem—servers, clients, use cases, and adoption patterns?</p>
   </div>
 
-  <div class="card">
-    <h3>AI Research Assistants</h3>
-    <div class="agent-card">
-      <div class="agent-avatar" style="background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);">R1</div>
-      <div class="agent-info">
-        <div class="agent-name">hubify-researcher-v1</div>
-        <div class="agent-role">Lead Research Agent</div>
+  <section class="section">
+    <h2>Mission Status</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Research Phases</h3>
+        <div class="phase-bar">
+          <div class="phase-segment completed" title="Literature Review: Active">
+            <span>Literature Review</span>
+          </div>
+          <div class="phase-segment" title="Data Collection: Pending">
+            <span>Data Collection</span>
+          </div>
+          <div class="phase-segment" title="Analysis: Pending">
+            <span>Analysis</span>
+          </div>
+          <div class="phase-segment" title="Synthesis: Pending">
+            <span>Synthesis</span>
+          </div>
+          <div class="phase-segment" title="Publication: Pending">
+            <span>Publication</span>
+          </div>
+        </div>
+        <p class="text-sm text-muted" style="margin-top: 1rem;">Current phase: Literature Review (active)</p>
+      </div>
+
+      <div class="card">
+        <h3>Overall Progress</h3>
+        <div class="stat">
+          <div class="stat-value">56%</div>
+          <div class="stat-label">Complete</div>
+        </div>
+        <div class="progress-bar" style="margin-top: 1rem;">
+          <div class="progress-fill" style="width: 56%;"></div>
+        </div>
       </div>
     </div>
-    <p class="text-sm text-muted" style="margin-top: 1rem;">Autonomous agent responsible for literature review, ecosystem mapping, pattern detection, and data synthesis. Currently in active literature review phase.</p>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <h2>Mission Resources</h2>
-  <div class="grid-2">
-    <div class="card">
-      <h3>External Links</h3>
-      <ul style="margin: 0; padding-left: 1.25rem;">
-        <li><a href="https://mcp-protocol-ecosystem-map.hubify.com" class="text-accent">Research Website</a></li>
-        <li><a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map" class="text-accent">GitHub Repository</a></li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Internal Navigation</h3>
-      <ul style="margin: 0; padding-left: 1.25rem;">
-        <li><a href="/mcp-protocol-ecosystem-map/findings" class="text-accent">Research Findings</a></li>
-        <li><a href="/mcp-protocol-ecosystem-map/paper" class="text-accent">Working Paper</a></li>
-        <li><a href="/mcp-protocol-ecosystem-map/team" class="text-accent">Team Details</a></li>
-        <li><a href="/mcp-protocol-ecosystem-map/sources" class="text-accent">Sources & Citations</a></li>
-      </ul>
-    </div>
-  </div>
-</section>
+  <section class="section">
+    <h2>Key Findings Preview</h2>
+    <p class="text-muted">Top discoveries from ongoing research</p>
+    
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="badge badge-success" style="margin-bottom: 0.75rem;">Signal · 85% confidence</div>
+        <h3>Anthropic Expanding MCP Spec with Streamable HTTP Transport</h3>
+        <p class="text-sm">Anthropic has released updates to the MCP specification adding streamable HTTP transport alongside the existing stdio transport. This enables remote MCP servers, stateless server deployments, and standard HTTP infrastructure integration—critical for scaling agent ecosystems.</p>
+      </div>
 
-<section class="section">
-  <div class="card">
+      <div class="card">
+        <div class="badge badge-warning" style="margin-bottom: 0.75rem;">Pattern · 67% confidence</div>
+        <h3>MCP Server Discovery via .well-known Convention</h3>
+        <p class="text-sm">A pattern is emerging where MCP servers advertise their capabilities via a <code>.well-known/mcp.json</code> file, similar to how web services use <code>.well-known/openid-configuration</code>. This allows agents to automatically discover available tools without manual configuration.</p>
+      </div>
+
+      <div class="card">
+        <div class="badge badge-neutral" style="margin-bottom: 0.75rem;">Context · 100% confidence</div>
+        <h3>MCP Protocol Ecosystem Map Website</h3>
+        <p class="text-sm">Research mission website deployed at <a href="https://mcp-protocol-ecosystem-map.hubify.com" class="text-accent">mcp-protocol-ecosystem-map.hubify.com</a>. Multi-page documentation site with 6 pages. GitHub repository: <a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map" class="text-accent">Hubify-Projects/mcp-protocol-ecosystem-map</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Research Team</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Principal Investigator</h3>
+        <div class="agent-card">
+          <div class="agent-avatar">HG</div>
+          <div class="agent-info">
+            <div class="agent-name">Houston Golden</div>
+            <div class="agent-role">Founder, BAMF / Hubify · Research Mission Author</div>
+          </div>
+        </div>
+        <p class="text-sm text-muted" style="margin-top: 1rem;">Houston provides the research vision, questions, and creative direction for this mission. Core ideas and insights originate from his work on the Model Context Protocol ecosystem.</p>
+      </div>
+
+      <div class="card">
+        <h3>AI Research Assistants</h3>
+        <div class="agent-card">
+          <div class="agent-avatar">R1</div>
+          <div class="agent-info">
+            <div class="agent-name">hubify-researcher-v1</div>
+            <div class="agent-role">Lead Agent · Literature Review & Data Collection</div>
+          </div>
+        </div>
+        <p class="text-sm text-muted" style="margin-top: 1rem;">AI agents serve as autonomous research assistants, helping with formalization, validation, literature review, and quality assurance. They support Houston's work but do not replace human authorship.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Mission Resources</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Findings</h3>
+        <p class="text-sm">Detailed research discoveries, patterns, and signals from ecosystem analysis.</p>
+        <p class="text-sm text-muted" style="margin-top: 0.5rem;">View all research findings →</p>
+      </div>
+
+      <div class="card">
+        <h3>Research Paper</h3>
+        <p class="text-sm">Formal publication documenting methodology, results, and implications for MCP adoption.</p>
+        <p class="text-sm text-muted" style="margin-top: 0.5rem;">Read the full paper →</p>
+      </div>
+
+      <div class="card">
+        <h3>Team & Collaboration</h3>
+        <p class="text-sm">Research team structure, human-AI collaboration model, and contributor roles.</p>
+        <p class="text-sm text-muted" style="margin-top: 0.5rem;">Meet the team →</p>
+      </div>
+
+      <div class="card">
+        <h3>Sources & Citations</h3>
+        <p class="text-sm">Curated bibliography of MCP specifications, implementations, and community resources.</p>
+        <p class="text-sm text-muted" style="margin-top: 0.5rem;">Browse sources →</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="card" style="border-left: 3px solid var(--accent);">
     <h3>About This Mission</h3>
-    <p>This research mission aims to create the definitive reference map of the Model Context Protocol ecosystem. By systematically cataloging servers, clients, use cases, and adoption patterns, we seek to identify opportunities for standardization, uncover integration best practices, and document the evolutionary trajectory of MCP as a foundational protocol for agentic systems.</p>
-    <p class="text-sm text-muted">Research is conducted openly with transparent methodology, reproducible analysis, and continuous updates as the ecosystem evolves.</p>
+    <p class="text-sm">The Model Context Protocol (MCP) is rapidly becoming a foundational standard for AI agent integration. This research mission aims to create the definitive map of the ecosystem—tracking every known server implementation, client library, real-world deployment, and emerging integration pattern. By cataloging adoption across platforms and use cases, we provide the AI community with actionable intelligence for building interoperable, production-ready agent systems.</p>
   </div>
-</section>
+</main>
 </main>
 <footer><div class="container"><p>Powered by <a href="https://hubify.com/research">Hubify</a></p><p>Last updated 2026-02-18 &middot; Research by Houston Golden, assisted by AI agents &middot; <a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map">View on GitHub</a></p></div></footer>
 <script>
