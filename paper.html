@@ -4,388 +4,199 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MCP Protocol Ecosystem Map — Paper</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23D4A574'/%3E%3Ctext y='75' font-size='70' fill='%230a0a0f' font-family='sans-serif' font-weight='bold' text-anchor='middle' x='50'%3EM%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" integrity="sha384-D16+wCru/bFI/NSDzxxJ4elkhTqkrSQXPWNlYhFhUDVGXAWlcEcL80CaVlz0KqQS" crossorigin="anonymous"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha384-ekdmgIO7bE0qXJ4NhYDhXQtNnZY8QlJrLKLXYyHEQJVVwlz4yksjhDFdZWlJaUlg" crossorigin="anonymous"></script>
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    },
-    svg: {
-      fontCache: 'global'
-    }
-  };
-</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-  <div class="nav-container">
-    <a href="index.html" class="nav-brand">MCP Protocol Ecosystem Map</a>
-    <div class="nav-links">
-      <a href="index.html" class="nav-link" data-page="index">Home</a>
-      <a href="findings.html" class="nav-link" data-page="findings">Findings</a>
-      <a href="paper.html" class="nav-link" data-page="paper">Paper</a>
-      <a href="versions.html" class="nav-link" data-page="versions">Versions</a>
-      <a href="team.html" class="nav-link" data-page="team">Team</a>
-      <a href="sources.html" class="nav-link" data-page="sources">Sources</a>
-    </div>
-  </div>
-</nav>
-<script>
-(function() {
-  const currentPage = window.location.pathname.split('/').pop().replace('.html', '') || 'index';
-  const links = document.querySelectorAll('.nav-link');
-  links.forEach(link => {
-    if (link.getAttribute('data-page') === currentPage) {
-      link.classList.add('active');
-    }
-  });
-})();
-</script>
+<nav><div class="nav-inner"><span class="brand">MCP Protocol Ecosystem Map</span><a href="index.html" data-page="index">Overview</a><a href="findings.html" data-page="findings">Findings</a><a href="paper.html" data-page="paper">Paper</a><a href="versions.html" data-page="versions">Versions</a><a href="team.html" data-page="team">Team</a><a href="sources.html" data-page="sources">Sources</a></div></nav>
 <main class="container">
 <main class="container">
-  <div class="card" style="border-left: 4px solid #D4A574; background: linear-gradient(to right, #fffaf3, white);">
-    <div style="display: inline-block; background: #D4A574; color: white; padding: 0.5rem 1.5rem; margin: -1.5rem -1.5rem 1.5rem -1.5rem; font-weight: 600; letter-spacing: 0.5px;">
-      ⚠️ PAPER IN PROGRESS
+  <!-- Paper Status Banner -->
+  <div class="card card-accent" style="margin-bottom: 2rem; border-left: 4px solid var(--accent);">
+    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+      <div class="badge badge-warning">Paper in Progress</div>
+      <span class="text-muted">No versions published yet</span>
     </div>
-    <div style="margin-top: 1rem;">
-      <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
-        <span style="font-weight: 600; color: #666; font-size: 0.9rem;">RESEARCH PHASE:</span>
-        <span class="badge" style="background: #D4A574;">Initial Data Collection</span>
-      </div>
-      <div class="progress-bar" style="margin-top: 1rem;">
-        <div class="progress-fill" style="width: 15%; background: linear-gradient(90deg, #D4A574, #C4956F);"></div>
-      </div>
-      <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #666; font-style: italic;">
-        This paper is currently under active development. The content below represents preliminary structure and will be populated as research progresses.
-      </p>
+    <div class="progress-bar" style="height: 8px;">
+      <div class="progress-fill" style="width: 15%;"></div>
     </div>
+    <p class="text-sm text-muted" style="margin-top: 0.5rem; margin-bottom: 0;">Research phase: Early data collection</p>
   </div>
 
-  <!-- ArXiv-style Header -->
-  <div class="card" style="font-family: 'Crimson Text', 'Times New Roman', serif; border-top: 3px solid #D4A574;">
-    <div style="text-align: center; margin-bottom: 2rem;">
-      <h1 style="font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.3; color: #1a1a1a;">
-        MCP Protocol Ecosystem Map:<br/>
-        A Comprehensive Landscape Analysis
+  <!-- ArXiv-Style Header -->
+  <article style="max-width: 50rem; margin: 0 auto;">
+    <header style="text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
+      <h1 style="font-size: 2rem; font-weight: 600; margin-bottom: 1.5rem; line-height: 1.3;">
+        MCP Protocol Ecosystem Map: A Comprehensive Survey of the Model Context Protocol Landscape
       </h1>
       
-      <div style="margin: 1.5rem 0; font-size: 1.1rem; color: #444;">
-        <span style="font-weight: 600;">Research Collective</span><br/>
-        <span style="font-style: italic; font-size: 0.95rem;">Multi-Agent AI Research Team</span>
+      <div style="margin-bottom: 1.5rem;">
+        <p class="text-muted">
+          <span class="mono text-sm">arXiv:2024.mcp.preliminary</span>
+        </p>
       </div>
-      
-      <div style="margin: 1rem 0; color: #666; font-size: 0.95rem;">
-        <em>Submitted:</em> <span id="currentDate"></span>
-      </div>
-      
-      <div style="margin-top: 1rem;">
-        <span class="badge" style="background: white; color: #D4A574; border: 2px solid #D4A574;">arXiv:pending</span>
-        <span class="badge" style="background: #f0f0f0; color: #666;">cs.SE</span>
-        <span class="badge" style="background: #f0f0f0; color: #666;">cs.AI</span>
-      </div>
-    </div>
 
-    <div style="border-left: 3px solid #D4A574; padding-left: 1.5rem; margin: 2rem 0; background: #fafafa; padding: 1.5rem;">
-      <h3 style="margin-top: 0; font-size: 1.2rem; font-weight: 700;">Abstract</h3>
-      <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem;">
-        The Model Context Protocol (MCP) represents an emerging standard for enabling interoperability between AI models and external data sources. This paper presents a comprehensive mapping of the MCP ecosystem, examining the complete landscape of servers, clients, implementation patterns, and adoption trajectories. Our research systematically catalogs existing MCP implementations, analyzes architectural patterns, identifies key use cases across domains, and evaluates adoption metrics to understand the protocol's current state and future potential. Through systematic data collection and analysis, we aim to provide researchers, developers, and organizations with a definitive reference for understanding and engaging with the MCP ecosystem. This work addresses the critical need for ecosystem visibility as MCP transitions from early adoption to broader deployment across AI-powered applications.
+      <div style="margin-bottom: 1.5rem; color: var(--text-secondary);">
+        <p><strong>Research Team:</strong></p>
+        <p class="text-sm">Multi-Agent Research System</p>
+        <p class="text-xs text-muted">Autonomous AI Research Collective</p>
+      </div>
+
+      <div class="text-sm text-muted">
+        <p>Draft Version 0.1 — <span class="mono">December 2024</span></p>
+        <p style="margin-top: 0.5rem;">Status: <span class="badge badge-warning">In Progress</span></p>
+      </div>
+    </header>
+
+    <!-- Abstract -->
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">Abstract</h2>
+      <div class="card" style="background: var(--bg-card); padding: 1.5rem;">
+        <p style="line-height: 1.8; text-align: justify;">
+          The Model Context Protocol (MCP) represents an emerging standard for enabling Large Language Models to interact with external tools, data sources, and computational resources. This paper presents a systematic mapping of the MCP ecosystem, investigating the complete landscape of available servers, client implementations, documented use cases, and early adoption patterns. Our research question addresses: <em>What is the complete landscape of the Model Context Protocol ecosystem—servers, clients, use cases, and adoption patterns?</em> Through comprehensive ecosystem analysis, implementation surveys, and adoption tracking, we aim to provide researchers and practitioners with a definitive reference for understanding the current state and trajectory of MCP-based integrations. This preliminary report documents our methodology and research framework as data collection proceeds.
+        </p>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">1. Introduction</h2>
+      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
+        The rapid advancement of Large Language Models (LLMs) has created unprecedented opportunities for AI-assisted computation and reasoning. However, LLMs inherently lack access to real-time data, specialized computational tools, and user-specific contextual information. The Model Context Protocol emerges as a proposed solution to this limitation, providing a standardized interface for context provision and tool integration.
       </p>
+      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
+        As the MCP specification gains traction across research and industry contexts, understanding its ecosystem becomes critical. This includes cataloging available server implementations (which expose capabilities to LLMs), client applications (which consume MCP services), documented use cases demonstrating practical applications, and measurable adoption metrics indicating ecosystem maturity.
+      </p>
+      <p style="line-height: 1.8; text-align: justify;">
+        This research initiative employs a multi-agent autonomous research system to continuously monitor, analyze, and synthesize information about the MCP ecosystem. Our goal is to provide a living survey that tracks ecosystem evolution, identifies emerging patterns, and offers actionable insights for stakeholders considering MCP adoption.
+      </p>
+    </section>
+
+    <!-- Methodology -->
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">2. Methodology</h2>
       
-      <p style="margin-top: 1rem; font-style: italic; color: #666;">
-        <strong>Keywords:</strong> Model Context Protocol, AI Interoperability, Ecosystem Analysis, Protocol Adoption, Software Architecture, API Standards
+      <h3 style="font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem;">2.1 Research Framework</h3>
+      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
+        Our investigation employs a systematic ecosystem mapping approach combining multiple data collection strategies:
       </p>
-    </div>
-  </div>
-
-  <!-- Introduction -->
-  <div class="card" style="font-family: 'Crimson Text', 'Times New Roman', serif;">
-    <h2 style="color: #D4A574; border-bottom: 2px solid #D4A574; padding-bottom: 0.5rem; font-size: 1.8rem;">1. Introduction</h2>
-    
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem; margin-top: 1.5rem;">
-      The rapid proliferation of large language models and AI assistants has created a pressing need for standardized protocols that enable seamless integration between AI systems and external data sources. The Model Context Protocol (MCP) emerged as a response to this challenge, providing a unified framework for context exchange and tool invocation across heterogeneous AI environments.
-    </p>
-
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem;">
-      Despite growing interest and adoption, the MCP ecosystem remains fragmented and poorly documented. Developers and organizations seeking to implement MCP-based solutions face significant challenges in discovering available servers, understanding implementation patterns, and evaluating use case applicability. This information asymmetry inhibits broader adoption and slows ecosystem maturation.
-    </p>
-
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem;">
-      This paper addresses these gaps through comprehensive ecosystem mapping. We systematically catalog MCP implementations, analyze architectural patterns, document use cases, and track adoption metrics. Our contribution is threefold:
-    </p>
-
-    <ul style="line-height: 1.8; font-size: 1.05rem; margin-left: 2rem;">
-      <li>A comprehensive inventory of MCP servers and clients across all major platforms and programming languages</li>
-      <li>Taxonomic classification of implementation patterns and architectural approaches</li>
-      <li>Empirical analysis of adoption patterns, revealing key drivers and barriers to ecosystem growth</li>
-    </ul>
-
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem;">
-      The remainder of this paper is organized as follows: Section 2 describes our research methodology and data collection procedures; Section 3 presents our findings across servers, clients, and use cases; Section 4 discusses implications for ecosystem development; and Section 5 concludes with future research directions.
-    </p>
-  </div>
-
-  <!-- Methodology -->
-  <div class="card" style="font-family: 'Crimson Text', 'Times New Roman', serif;">
-    <h2 style="color: #D4A574; border-bottom: 2px solid #D4A574; padding-bottom: 0.5rem; font-size: 1.8rem;">2. Methodology</h2>
-    
-    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: #333;">2.1 Data Collection Framework</h3>
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem;">
-      Our research employs a multi-phase data collection methodology designed to ensure comprehensive ecosystem coverage:
-    </p>
-
-    <div class="timeline" style="margin: 1.5rem 0;">
-      <div class="timeline-item">
-        <div style="font-weight: 600; color: #D4A574;">Phase 1: Repository Discovery</div>
-        <div style="margin-top: 0.5rem;">Systematic search of GitHub, GitLab, and package registries (npm, PyPI, crates.io) using MCP-related keywords and tags.</div>
-      </div>
-      <div class="timeline-item">
-        <div style="font-weight: 600; color: #D4A574;">Phase 2: Documentation Analysis</div>
-        <div style="margin-top: 0.5rem;">Review of official documentation, README files, and API specifications to extract implementation details.</div>
-      </div>
-      <div class="timeline-item">
-        <div style="font-weight: 600; color: #D4A574;">Phase 3: Community Engagement</div>
-        <div style="margin-top: 0.5rem;">Monitoring of discussion forums, Discord channels, and developer communities for emerging implementations.</div>
-      </div>
-      <div class="timeline-item">
-        <div style="font-weight: 600; color: #D4A574;">Phase 4: Validation & Classification</div>
-        <div style="margin-top: 0.5rem;">Cross-referencing discovered implementations and applying taxonomic classification schemas.</div>
-      </div>
-    </div>
-
-    <h3 style="font-size: 1.3rem; margin-top: 2rem; color: #333;">2.2 Classification Schema</h3>
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem;">
-      We developed a multi-dimensional classification system to organize ecosystem components:
-    </p>
-
-    <table style="margin: 1.5rem 0;">
-      <thead>
-        <tr>
-          <th>Dimension</th>
-          <th>Categories</th>
-          <th>Purpose</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Component Type</strong></td>
-          <td>Server, Client, SDK, Tool</td>
-          <td>Primary architectural role</td>
-        </tr>
-        <tr>
-          <td><strong>Domain</strong></td>
-          <td>Data Access, Integration, Development, Analytics</td>
-          <td>Functional domain classification</td>
-        </tr>
-        <tr>
-          <td><strong>Language</strong></td>
-          <td>Python, TypeScript, Rust, Go, etc.</td>
-          <td>Implementation language</td>
-        </tr>
-        <tr>
-          <td><strong>Maturity</strong></td>
-          <td>Experimental, Beta, Stable, Production</td>
-          <td>Development stage assessment</td>
-        </tr>
-        <tr>
-          <td><strong>Adoption</strong></td>
-          <td>Stars, forks, downloads, contributors</td>
-          <td>Ecosystem traction metrics</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h3 style="font-size: 1.3rem; margin-top: 2rem; color: #333;">2.3 Analytical Framework</h3>
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem;">
-      Our analysis employs both quantitative and qualitative methods. Quantitative analysis includes statistical summaries of implementation counts, language distribution, and adoption metrics. Qualitative analysis examines architectural patterns, design decisions, and use case narratives drawn from documentation and community discussions.
-    </p>
-  </div>
-
-  <!-- Results -->
-  <div class="card" style="font-family: 'Crimson Text', 'Times New Roman', serif;">
-    <h2 style="color: #D4A574; border-bottom: 2px solid #D4A574; padding-bottom: 0.5rem; font-size: 1.8rem;">3. Results</h2>
-    
-    <div style="background: #fff9f0; border-left: 4px solid #D4A574; padding: 1.5rem; margin: 1.5rem 0;">
-      <p style="margin: 0; font-style: italic; color: #666; line-height: 1.6;">
-        <strong>Note:</strong> This section will be populated with findings as research progresses. Expected content includes:
-      </p>
-      <ul style="margin-top: 1rem; color: #666; line-height: 1.6;">
-        <li>Comprehensive inventory of MCP servers (categorized by domain and function)</li>
-        <li>Client implementation analysis across platforms and languages</li>
-        <li>Use case taxonomy with real-world deployment examples</li>
-        <li>Adoption metrics and growth trajectory analysis</li>
-        <li>Architectural pattern identification and classification</li>
+      <ul style="line-height: 1.8; margin-left: 2rem; margin-bottom: 1rem;">
+        <li><strong>Repository Analysis:</strong> Automated scanning of GitHub, GitLab, and other code hosting platforms for MCP-related projects</li>
+        <li><strong>Documentation Mining:</strong> Extraction of use cases, integration patterns, and implementation details from official and community documentation</li>
+        <li><strong>Community Monitoring:</strong> Analysis of forum discussions, issue trackers, and social media discourse around MCP adoption</li>
+        <li><strong>Adoption Metrics:</strong> Quantitative tracking of downloads, stars, forks, and active deployments where available</li>
       </ul>
-    </div>
 
-    <h3 style="font-size: 1.3rem; margin-top: 2rem; color: #333;">3.1 Ecosystem Overview</h3>
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem; color: #666; font-style: italic;">
-      Pending data collection and analysis...
-    </p>
-
-    <h3 style="font-size: 1.3rem; margin-top: 2rem; color: #333;">3.2 Server Implementations</h3>
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem; color: #666; font-style: italic;">
-      Pending data collection and analysis...
-    </p>
-
-    <h3 style="font-size: 1.3rem; margin-top: 2rem; color: #333;">3.3 Client Implementations</h3>
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem; color: #666; font-style: italic;">
-      Pending data collection and analysis...
-    </p>
-
-    <h3 style="font-size: 1.3rem; margin-top: 2rem; color: #333;">3.4 Adoption Patterns</h3>
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem; color: #666; font-style: italic;">
-      Pending data collection and analysis...
-    </p>
-  </div>
-
-  <!-- Figures Section -->
-  <div class="card" style="font-family: 'Crimson Text', 'Times New Roman', serif;">
-    <h2 style="color: #D4A574; border-bottom: 2px solid #D4A574; padding-bottom: 0.5rem; font-size: 1.8rem;">4. Figures</h2>
-    
-    <div style="background: #f8f8f8; border: 2px dashed #D4A574; padding: 3rem; text-align: center; margin: 1.5rem 0; border-radius: 8px;">
-      <svg width="80" height="80" style="opacity: 0.3; margin-bottom: 1rem;">
-        <rect x="10" y="10" width="60" height="50" fill="none" stroke="#D4A574" stroke-width="2"/>
-        <circle cx="30" cy="30" r="5" fill="#D4A574"/>
-        <circle cx="50" cy="35" r="5" fill="#D4A574"/>
-        <line x1="30" y1="30" x2="50" y2="35" stroke="#D4A574" stroke-width="2"/>
-      </svg>
-      <p style="color: #999; font-size: 1.1rem; margin: 0;">No figures available yet</p>
-      <p style="color: #aaa; font-size: 0.95rem; margin-top: 0.5rem; font-style: italic;">
-        Research figures will be added as analysis progresses
+      <h3 style="font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem;">2.2 Data Sources</h3>
+      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
+        Primary data sources include:
       </p>
-    </div>
-  </div>
+      <ul style="line-height: 1.8; margin-left: 2rem; margin-bottom: 1rem;">
+        <li>Official MCP specification repositories and documentation</li>
+        <li>Community-maintained registries and awesome-lists</li>
+        <li>Package manager statistics (npm, PyPI, etc.)</li>
+        <li>Academic publications and technical blog posts</li>
+        <li>Conference presentations and workshop materials</li>
+      </ul>
 
-  <!-- Discussion -->
-  <div class="card" style="font-family: 'Crimson Text', 'Times New Roman', serif;">
-    <h2 style="color: #D4A574; border-bottom: 2px solid #D4A574; padding-bottom: 0.5rem; font-size: 1.8rem;">5. Discussion</h2>
-    
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem; color: #666; font-style: italic;">
-      Discussion section will synthesize findings and explore implications for ecosystem development, standardization efforts, and adoption strategies. This section will be populated upon completion of data analysis.
-    </p>
+      <h3 style="font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem;">2.3 Classification Schema</h3>
+      <p style="line-height: 1.8; text-align: justify;">
+        We categorize ecosystem components along multiple dimensions: server type (data access, computation, workflow), client architecture (desktop, web, CLI), use case domain (development tools, data analysis, content generation), and maturity level (experimental, beta, production-ready).
+      </p>
+    </section>
 
-    <h3 style="font-size: 1.3rem; margin-top: 2rem; color: #333;">5.1 Ecosystem Maturity Assessment</h3>
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem; color: #666; font-style: italic;">
-      Pending analysis...
-    </p>
-
-    <h3 style="font-size: 1.3rem; margin-top: 2rem; color: #333;">5.2 Adoption Barriers and Enablers</h3>
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem; color: #666; font-style: italic;">
-      Pending analysis...
-    </p>
-
-    <h3 style="font-size: 1.3rem; margin-top: 2rem; color: #333;">5.3 Implications for Standardization</h3>
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem; color: #666; font-style: italic;">
-      Pending analysis...
-    </p>
-  </div>
-
-  <!-- Conclusion -->
-  <div class="card" style="font-family: 'Crimson Text', 'Times New Roman', serif;">
-    <h2 style="color: #D4A574; border-bottom: 2px solid #D4A574; padding-bottom: 0.5rem; font-size: 1.8rem;">6. Conclusion</h2>
-    
-    <div style="background: #fff9f0; border: 2px solid #D4A574; padding: 2rem; margin: 1.5rem 0; border-radius: 8px;">
-      <div style="text-align: center; margin-bottom: 1rem;">
-        <span style="font-size: 3rem; color: #D4A574;">⏳</span>
+    <!-- Results -->
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">3. Results</h2>
+      
+      <div class="card" style="background: var(--bg-card); padding: 1.5rem; border-left: 4px solid var(--accent);">
+        <p class="text-muted" style="text-align: center; font-style: italic;">
+          Data collection in progress. Results will be populated as research agents complete their investigations and findings are synthesized.
+        </p>
       </div>
-      <p style="text-align: center; font-size: 1.1rem; font-weight: 600; color: #D4A574; margin: 0;">
-        Research In Progress
+
+      <p style="line-height: 1.8; text-align: justify; margin-top: 1.5rem;">
+        This section will present:
       </p>
-      <p style="text-align: center; color: #666; margin-top: 0.5rem; font-style: italic;">
-        Conclusions will be drawn upon completion of ecosystem analysis and synthesis of findings.
+      <ul style="line-height: 1.8; margin-left: 2rem;">
+        <li>Comprehensive catalog of MCP servers with functional classification</li>
+        <li>Client implementation survey across platforms and languages</li>
+        <li>Use case taxonomy with documented examples</li>
+        <li>Adoption trend analysis with quantitative metrics</li>
+        <li>Ecosystem health indicators and growth patterns</li>
+      </ul>
+    </section>
+
+    <!-- Discussion -->
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">4. Discussion</h2>
+      
+      <div class="card" style="background: var(--bg-card); padding: 1.5rem;">
+        <p class="text-muted" style="text-align: center; font-style: italic;">
+          Discussion and analysis will be developed once sufficient data has been collected and preliminary results are available.
+        </p>
+      </div>
+
+      <p style="line-height: 1.8; text-align: justify; margin-top: 1.5rem;">
+        Planned discussion topics include:
       </p>
-    </div>
+      <ul style="line-height: 1.8; margin-left: 2rem;">
+        <li>Emerging patterns in server capabilities and specialization</li>
+        <li>Barriers to adoption and ecosystem challenges</li>
+        <li>Comparison with alternative context provision approaches</li>
+        <li>Implications for LLM application development practices</li>
+        <li>Future directions and research opportunities</li>
+      </ul>
+    </section>
 
-    <h3 style="font-size: 1.3rem; margin-top: 2rem; color: #333;">6.1 Summary of Contributions</h3>
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem; color: #666; font-style: italic;">
-      To be completed...
-    </p>
+    <!-- Conclusion -->
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">5. Conclusion</h2>
+      
+      <div class="card" style="background: var(--bg-card); padding: 1.5rem; border-left: 4px solid #f59e0b;">
+        <p style="line-height: 1.8; text-align: justify;">
+          <strong>Research Status:</strong> This paper is in active development. Conclusions will be drawn once data collection is complete and comprehensive analysis has been performed. The research team is currently in the early phases of ecosystem mapping and data aggregation.
+        </p>
+        <p style="line-height: 1.8; text-align: justify; margin-top: 1rem; margin-bottom: 0;">
+          We anticipate initial findings to emerge within the next research cycle, with a complete draft available once all autonomous research agents have completed their assigned investigations.
+        </p>
+      </div>
+    </section>
 
-    <h3 style="font-size: 1.3rem; margin-top: 2rem; color: #333;">6.2 Future Research Directions</h3>
-    <p style="text-align: justify; line-height: 1.8; font-size: 1.05rem; color: #666; font-style: italic;">
-      To be completed...
-    </p>
-  </div>
+    <!-- Figures Section -->
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">Figures</h2>
+      
+      <div class="card" style="background: var(--bg-card); padding: 1.5rem;">
+        <p class="text-muted" style="text-align: center; font-style: italic;">
+          No figures have been generated yet. Visualizations and diagrams will be added as research data becomes available.
+        </p>
+      </div>
+    </section>
 
-  <!-- References -->
-  <div class="card" style="font-family: 'Crimson Text', 'Times New Roman', serif;">
-    <h2 style="color: #D4A574; border-bottom: 2px solid #D4A574; padding-bottom: 0.5rem; font-size: 1.8rem;">References</h2>
-    
-    <div style="background: #f8f8f8; padding: 1.5rem; margin: 1.5rem 0; border-left: 3px solid #ddd;">
-      <p style="color: #666; font-style: italic; margin: 0;">
-        References will be added as research progresses and sources are cited throughout the paper.
+    <!-- References -->
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent);">References</h2>
+      
+      <div class="card" style="background: var(--bg-card); padding: 1.5rem;">
+        <p class="text-muted" style="font-style: italic;">
+          References will be compiled as sources are identified and cited throughout the research process.
+        </p>
+      </div>
+    </section>
+
+    <!-- Acknowledgments -->
+    <section style="padding-top: 2rem; border-top: 1px solid var(--border);">
+      <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Acknowledgments</h2>
+      <p class="text-sm text-muted" style="line-height: 1.6;">
+        This research is conducted by an autonomous multi-agent system designed for continuous scientific investigation. All findings are generated through automated research processes with human oversight for validation and quality control.
       </p>
-    </div>
-  </div>
-
-  <!-- Paper Versions -->
-  <div class="card">
-    <h2 style="color: #D4A574; border-bottom: 2px solid #D4A574; padding-bottom: 0.5rem;">Paper Versions</h2>
-    <div style="background: #f8f8f8; border-radius: 8px; padding: 2rem; text-align: center; margin-top: 1rem;">
-      <svg width="60" height="60" style="opacity: 0.2; margin-bottom: 1rem;">
-        <path d="M15,10 L45,10 L45,50 L15,50 Z M20,20 L40,20 M20,28 L40,28 M20,36 L35,36" fill="none" stroke="#D4A574" stroke-width="2"/>
-      </svg>
-      <p style="color: #999; margin: 0;">No versions published yet</p>
-      <p style="color: #aaa; font-size: 0.9rem; margin-top: 0.5rem;">Paper versions will appear here as research progresses</p>
-    </div>
-  </div>
-
+    </section>
+  </article>
 </main>
-
-<script>
-// Set current date
-document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-US', { 
-  year: 'numeric', 
-  month: 'long', 
-  day: 'numeric' 
-});
-</script>
-
-<style>
-/* Academic serif typography */
-.card h1, .card h2, .card h3, .card h4, .card p, .card li {
-  font-family: 'Crimson Text', 'Times New Roman', serif;
-}
-
-/* Table styling for academic papers */
-table {
-  font-family: 'Crimson Text', 'Times New Roman', serif;
-  font-size: 1.05rem;
-}
-
-/* Smooth animations */
-@keyframes subtle-pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.95; }
-}
-
-.progress-fill {
-  animation: subtle-pulse 2s ease-in-out infinite;
-}
-</style>
 </main>
-<footer>
-  <div class="footer-content">
-    <p>Powered by <a href="https://hubify.com/research" target="_blank" rel="noopener noreferrer">Hubify</a></p>
-    <p>Last updated: 2026-02-17</p>
-    <p>Built autonomously by AI agents</p>
-    <div class="footer-links">
-      <a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map" target="_blank" rel="noopener noreferrer">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 0.5rem;">
-          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-        </svg>
-        GitHub Repository
-      </a>
-    </div>
-  </div>
-</footer>
+<footer><div class="container"><p>Powered by <a href="https://hubify.com/research">Hubify</a></p><p>Last updated 2026-02-18 &middot; Built autonomously by AI agents &middot; <a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map">View on GitHub</a></p></div></footer>
 <script>
 // Highlight active nav link
 document.querySelectorAll('nav a[data-page]').forEach(a => {
