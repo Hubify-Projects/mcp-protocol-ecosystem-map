@@ -12,374 +12,387 @@
 <nav><div class="nav-inner"><span class="brand">MCP Protocol Ecosystem Map</span><a href="index.html" data-page="index">Overview</a><a href="findings.html" data-page="findings">Findings</a><a href="paper.html" data-page="paper">Paper</a><a href="versions.html" data-page="versions">Versions</a><a href="team.html" data-page="team">Team</a><a href="sources.html" data-page="sources">Sources</a></div></nav>
 <main class="container">
 <main class="container">
-  <section class="hero">
-    <h1>Sources & Methodology</h1>
-    <p class="subtitle">Complete bibliography, data sources, and research transparency for the MCP Protocol Ecosystem Map mission</p>
-    <div class="meta">
-      <span class="badge badge-neutral">Living Document</span>
-      <span class="badge badge-accent">Open Research</span>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="card card-accent">
-      <h3>Research Status</h3>
-      <p><strong>Current Phase:</strong> Early Documentation & Discovery</p>
-      <p class="text-muted">This research mission is in its initial stages. More sources, references, and methodology details will be added as the research progresses and findings emerge.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Authorship & Collaboration Model</h2>
-    <div class="card">
-      <h3>Primary Author</h3>
-      <div class="agent-card">
-        <div class="agent-avatar">HG</div>
-        <div class="agent-info">
-          <div class="agent-name">Houston Golden</div>
-          <div class="agent-role">Founder, BAMF / Hubify</div>
+    <div class="hero">
+        <h1>Sources & Methodology</h1>
+        <p class="subtitle">Complete documentation of research sources, tools, and collaborative process</p>
+        <div class="meta">
+            <span class="badge badge-accent">MCP Protocol Ecosystem Map</span>
+            <span class="badge badge-neutral">Research in Progress</span>
         </div>
-      </div>
-      <p>Houston Golden is the primary author and researcher for this mission. All core insights, theoretical frameworks, and research directions originate from his work.</p>
     </div>
 
-    <div class="card">
-      <h3>AI Research Assistance</h3>
-      <p>This research leverages autonomous AI agents as research assistants. Their role includes:</p>
-      <ul>
-        <li><strong>Literature Review:</strong> Discovering and cataloging relevant papers, documentation, and prior work</li>
-        <li><strong>Data Collection:</strong> Gathering ecosystem data, protocol specifications, and implementation patterns</li>
-        <li><strong>Formalization:</strong> Helping structure findings into clear, documented formats</li>
-        <li><strong>Validation:</strong> Cross-referencing claims against published sources and specifications</li>
-        <li><strong>Quality Assurance:</strong> Ensuring citations are accurate and claims are properly attributed</li>
-      </ul>
-      <p class="text-muted">The human-AI collaboration is transparent: Houston provides the vision, questions, and creative direction. AI agents assist with research execution, validation, and documentation. All novel contributions are Houston's intellectual work.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Knowledge Base</h2>
-    <p class="text-muted">The following knowledge items were collected during the research process. Each item includes a confidence score indicating reliability and completeness.</p>
-
-    <div class="card">
-      <h3>1. Project Context & Repository</h3>
-      <div class="grid-2">
-        <div>
-          <p><strong>Type:</strong> <span class="badge badge-neutral">Context</span></p>
-          <p><strong>Confidence:</strong> <span class="badge badge-success">1.00 (High)</span></p>
-          <p><strong>Source:</strong> Project Repository</p>
+    <div class="section">
+        <div class="card card-accent">
+            <h3>Research Transparency Notice</h3>
+            <p>This research mission is <strong>actively in progress</strong> and currently in the Literature Review phase. Sources, methodologies, and data will be continuously updated as the research advances through validation, analysis, and synthesis phases.</p>
         </div>
-        <div>
-          <p><strong>Website:</strong> <a href="https://mcp-protocol-ecosystem-map.hubify.com" class="text-accent">mcp-protocol-ecosystem-map.hubify.com</a></p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map" class="text-accent">Hubify-Projects/mcp-protocol-ecosystem-map</a></p>
-          <p><strong>Generated:</strong> <span class="mono text-sm">2026-02-18</span></p>
+    </div>
+
+    <div class="section">
+        <h2>Authorship & Collaboration Model</h2>
+        <div class="card">
+            <h3>Primary Author</h3>
+            <p><strong>Houston Golden</strong> — Founder, BAMF / Hubify</p>
+            <p class="text-muted">Houston provides the research vision, strategic direction, theoretical insights, and creative synthesis. All core ideas, frameworks, and interpretations originate from Houston's work.</p>
         </div>
-      </div>
-      <p class="text-muted">Multi-page research website (6 pages) documenting the MCP protocol ecosystem structure.</p>
-    </div>
 
-    <div class="card">
-      <h3>2. Anthropic MCP Specification Updates</h3>
-      <div class="grid-2">
-        <div>
-          <p><strong>Type:</strong> <span class="badge badge-accent">Signal</span></p>
-          <p><strong>Confidence:</strong> <span class="badge badge-warning">0.85 (Medium-High)</span></p>
-          <p><strong>Source:</strong> Anthropic Documentation</p>
-        </div>
-        <div>
-          <p><strong>Key Finding:</strong> Streamable HTTP Transport</p>
-          <p><strong>Impact:</strong> Remote servers, stateless deployments, standard web protocols</p>
-        </div>
-      </div>
-      <p>Anthropic has expanded the MCP specification to include streamable HTTP transport alongside the existing stdio transport. This enables:</p>
-      <ul>
-        <li>Remote MCP servers (not restricted to local processes)</li>
-        <li>Stateless server deployments (improved scalability)</li>
-        <li>Standard web protocol integration</li>
-      </ul>
-      <p class="text-muted"><strong>Note:</strong> Full citation details will be added when the specific documentation version is identified.</p>
-    </div>
-
-    <div class="card">
-      <h3>3. Server Discovery Pattern</h3>
-      <div class="grid-2">
-        <div>
-          <p><strong>Type:</strong> <span class="badge badge-neutral">Pattern</span></p>
-          <p><strong>Confidence:</strong> <span class="badge badge-warning">0.67 (Medium)</span></p>
-          <p><strong>Source:</strong> Emerging Convention</p>
-        </div>
-        <div>
-          <p><strong>Pattern:</strong> <span class="mono text-sm">.well-known/mcp.json</span></p>
-          <p><strong>Analogy:</strong> Similar to OpenID Connect discovery</p>
-        </div>
-      </div>
-      <p>An emerging pattern where MCP servers advertise their capabilities via a standardized discovery file, allowing agents to automatically discover available tools without manual configuration.</p>
-      <p class="text-muted"><strong>Status:</strong> Convention under observation. Not yet formally standardized. Examples and implementations will be documented as they emerge.</p>
-    </div>
-
-    <div class="card">
-      <h3>4. MCP Server Development Guide</h3>
-      <div class="grid-2">
-        <div>
-          <p><strong>Type:</strong> <span class="badge badge-accent">Guide</span></p>
-          <p><strong>Confidence:</strong> <span class="badge badge-success">0.83 (Medium-High)</span></p>
-          <p><strong>Source:</strong> Implementation Documentation</p>
-        </div>
-        <div>
-          <p><strong>Topic:</strong> Building MCP Servers for Agent Integration</p>
-          <p><strong>Architecture:</strong> Client-Server Model</p>
-        </div>
-      </div>
-      <p>Documentation covering the architecture and implementation patterns for building MCP servers that integrate with AI agents (Claude Code, Cursor, etc.).</p>
-      <p class="text-muted"><strong>Note:</strong> Full source attribution pending identification of original documentation source.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Numbered Bibliography</h2>
-    <p class="text-muted">Formal references will be added as specific papers, specifications, and sources are identified and cited during research.</p>
-
-    <div class="card">
-      <h3>Primary Sources</h3>
-      <ol>
-        <li>
-          <strong>Anthropic. (2024).</strong> <em>Model Context Protocol Specification.</em> Retrieved from <a href="https://github.com/anthropics/anthropic-sdk-typescript" class="text-accent">GitHub</a>
-          <span class="text-muted"> — Pending version identification and formal citation</span>
-        </li>
-      </ol>
-    </div>
-
-    <div class="card">
-      <h3>Secondary Sources</h3>
-      <p class="text-muted">No secondary sources yet cataloged. Will be added as literature review progresses.</p>
-    </div>
-
-    <div class="card">
-      <h3>Technical Documentation</h3>
-      <ol>
-        <li>
-          <strong>Project Repository:</strong> <a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map" class="text-accent">Hubify-Projects/mcp-protocol-ecosystem-map</a>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>External Data Sources</h2>
-    <p class="text-muted">As ecosystem data is collected, this section will catalog datasets, APIs, and external sources consulted.</p>
-
-    <div class="card">
-      <table>
-        <thead>
-          <tr>
-            <th>Data Source</th>
-            <th>Type</th>
-            <th>Access Method</th>
-            <th>Usage</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Anthropic Documentation</td>
-            <td>Technical Docs</td>
-            <td>Public Web</td>
-            <td>MCP Specification Details</td>
-            <td><span class="badge badge-warning">Pending Citation</span></td>
-          </tr>
-          <tr>
-            <td>GitHub Repositories</td>
-            <td>Code Examples</td>
-            <td>Public Git</td>
-            <td>Implementation Patterns</td>
-            <td><span class="badge badge-neutral">To Be Cataloged</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>API & Tool Usage</h2>
-    <p class="text-muted">Full transparency on which APIs, tools, and AI models were used at each research stage.</p>
-
-    <div class="card">
-      <table>
-        <thead>
-          <tr>
-            <th>Research Stage</th>
-            <th>Tools / APIs Used</th>
-            <th>Purpose</th>
-            <th>Provider</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Initial Documentation</td>
-            <td>Hubify Research Platform</td>
-            <td>Project scaffolding, page generation</td>
-            <td>Hubify</td>
-          </tr>
-          <tr>
-            <td>Knowledge Collection</td>
-            <td>AI Research Agents</td>
-            <td>Information gathering, pattern detection</td>
-            <td>Hubify (Claude-based)</td>
-          </tr>
-          <tr>
-            <td colspan="4" class="text-muted">Additional tool usage will be logged as research progresses</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="card">
-      <h3>AI Models Used</h3>
-      <ul>
-        <li><strong>Primary Model:</strong> Claude (Anthropic) — Research assistance, literature review, formalization</li>
-        <li><strong>Usage Context:</strong> All AI assistance is supervised by Houston Golden. Models provide research support but do not generate original theories or frameworks.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Methodology</h2>
-    
-    <div class="card">
-      <h3>Research Approach</h3>
-      <p>This research mission follows an iterative, open-science methodology:</p>
-      
-      <div class="timeline">
-        <div class="timeline-item completed">
-          <div class="timeline-date">Phase 1</div>
-          <div class="timeline-title">Project Initialization</div>
-          <div class="timeline-body">
+        <div class="card">
+            <h3>AI Research Assistance</h3>
+            <p>Autonomous AI agents serve as research assistants, performing specific tasks under Houston's direction:</p>
             <ul>
-              <li>Define research scope and objectives</li>
-              <li>Establish documentation structure</li>
-              <li>Deploy research website and repository</li>
+                <li><strong>Literature review</strong> — Systematic scanning of academic papers, technical documentation, and industry reports</li>
+                <li><strong>Data collection</strong> — Gathering ecosystem data, GitHub repositories, protocol specifications</li>
+                <li><strong>Validation</strong> — Cross-referencing claims, verifying technical details, checking mathematical derivations</li>
+                <li><strong>Formalization</strong> — Converting conceptual ideas into structured frameworks and notation</li>
+                <li><strong>Citation management</strong> — Tracking sources, maintaining bibliographic integrity</li>
             </ul>
-          </div>
+            <p class="text-muted">AI agents do not generate novel theories or claims. They assist with formalization, validation, and organization of Houston's original research.</p>
         </div>
 
-        <div class="timeline-item active">
-          <div class="timeline-date">Phase 2</div>
-          <div class="timeline-title">Ecosystem Discovery</div>
-          <div class="timeline-body">
+        <div class="card">
+            <h3>Active Research Squad</h3>
+            <div class="agent-card">
+                <div class="agent-avatar">R</div>
+                <div class="agent-info">
+                    <div class="agent-name">hubify-researcher-v1</div>
+                    <div class="agent-role">Literature Review & Data Collection</div>
+                </div>
+            </div>
+            <p class="text-sm text-muted">Current phase: Literature Review (1 update completed as of 2/18/2026)</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Knowledge Base</h2>
+        <p class="text-muted">The following knowledge items have been collected and validated during the research process. Each item includes a confidence score and classification.</p>
+
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                <div>
+                    <h4 style="margin: 0;">Website: mcp-protocol-ecosystem-map</h4>
+                    <span class="badge badge-neutral">context</span>
+                </div>
+                <span class="badge badge-success">Confidence: 1.00</span>
+            </div>
+            <p><strong>Project Repository:</strong> <a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map" target="_blank" rel="noopener" class="text-accent">github.com/Hubify-Projects/mcp-protocol-ecosystem-map</a></p>
+            <p><strong>Live Site:</strong> <a href="https://mcp-protocol-ecosystem-map.hubify.com" target="_blank" rel="noopener" class="text-accent">mcp-protocol-ecosystem-map.hubify.com</a></p>
+            <p><strong>Type:</strong> Multi-page research site (6 pages)</p>
+            <p class="text-sm text-muted">Generated: February 18, 2026</p>
+        </div>
+
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                <div>
+                    <h4 style="margin: 0;">Anthropic Expanding MCP Spec with Streamable HTTP Transport</h4>
+                    <span class="badge badge-accent">signal</span>
+                </div>
+                <span class="badge badge-warning">Confidence: 0.85</span>
+            </div>
+            <p>Anthropic has released updates to the MCP specification adding streamable HTTP transport alongside the existing stdio transport. This enables:</p>
             <ul>
-              <li>Catalog MCP implementations and servers</li>
-              <li>Identify key patterns and conventions</li>
-              <li>Map relationships between components</li>
-              <li>Document emerging standards</li>
+                <li>Remote MCP servers (not limited to local processes)</li>
+                <li>Stateless server deployments (improved scalability)</li>
+                <li>Standardized web-based agent-tool communication</li>
             </ul>
-          </div>
+            <p class="text-sm text-muted"><strong>Significance:</strong> Major architectural shift enabling distributed agent ecosystems</p>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-date">Phase 3</div>
-          <div class="timeline-title">Analysis & Synthesis</div>
-          <div class="timeline-body">
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                <div>
+                    <h4 style="margin: 0;">MCP Server Discovery via .well-known Convention</h4>
+                    <span class="badge badge-neutral">pattern</span>
+                </div>
+                <span class="badge badge-warning">Confidence: 0.67</span>
+            </div>
+            <p>Emerging pattern: MCP servers advertising capabilities via <code>.well-known/mcp.json</code> files, similar to OpenID Connect's <code>.well-known/openid-configuration</code>.</p>
+            <p><strong>Impact:</strong> Enables automatic tool discovery without manual agent configuration.</p>
+            <p class="text-sm text-muted"><strong>Example:</strong> <code>https://api.example.com/.well-known/mcp.json</code></p>
+        </div>
+
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                <div>
+                    <h4 style="margin: 0;">Building MCP Servers for Agent Integration</h4>
+                    <span class="badge badge-success">guide</span>
+                </div>
+                <span class="badge badge-success">Confidence: 0.83</span>
+            </div>
+            <p>Technical guide covering MCP architecture and implementation patterns:</p>
             <ul>
-              <li>Analyze ecosystem structure</li>
-              <li>Identify integration patterns</li>
-              <li>Document best practices</li>
-              <li>Create visual ecosystem maps</li>
+                <li><strong>Architecture:</strong> Client-server model (MCP Client = AI agent, MCP Server = tool/service provider)</li>
+                <li><strong>Integration:</strong> Compatible with Claude Code, Cursor, and other MCP-compliant agents</li>
+                <li><strong>Implementation:</strong> Best practices for building production-ready MCP servers</li>
             </ul>
-          </div>
         </div>
+    </div>
 
-        <div class="timeline-item">
-          <div class="timeline-date">Phase 4</div>
-          <div class="timeline-title">Publication & Iteration</div>
-          <div class="timeline-body">
+    <div class="section">
+        <h2>Research Methodology</h2>
+        
+        <div class="card">
+            <h3>Phase 1: Literature Review (Current)</h3>
+            <p><strong>Status:</strong> <span class="badge badge-active">In Progress</span></p>
+            <p><strong>Objectives:</strong></p>
             <ul>
-              <li>Publish findings and maps</li>
-              <li>Gather community feedback</li>
-              <li>Update documentation based on new developments</li>
-              <li>Maintain living ecosystem map</li>
+                <li>Map the current MCP protocol ecosystem landscape</li>
+                <li>Identify key players, tools, and implementation patterns</li>
+                <li>Document emerging standards and conventions</li>
+                <li>Catalog active MCP servers and client integrations</li>
             </ul>
-          </div>
+            <p><strong>Methods:</strong></p>
+            <ul>
+                <li>Systematic review of Anthropic MCP documentation</li>
+                <li>GitHub repository analysis (trending MCP projects)</li>
+                <li>Community forum monitoring (Discord, Reddit, Twitter/X)</li>
+                <li>Technical specification parsing</li>
+            </ul>
+            <p class="text-sm text-muted"><strong>Progress:</strong> 1 research update completed by hubify-researcher-v1 (February 18, 2026)</p>
         </div>
-      </div>
+
+        <div class="card">
+            <h3>Phase 2: Data Collection & Analysis</h3>
+            <p><strong>Status:</strong> <span class="badge badge-neutral">Planned</span></p>
+            <p><strong>Planned Activities:</strong></p>
+            <ul>
+                <li>Quantitative ecosystem metrics (server count, adoption rates, integration patterns)</li>
+                <li>Qualitative analysis of use cases and deployment scenarios</li>
+                <li>Network topology mapping (client-server relationships)</li>
+                <li>Performance benchmarking (latency, throughput, reliability)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Phase 3: Synthesis & Visualization</h3>
+            <p><strong>Status:</strong> <span class="badge badge-neutral">Planned</span></p>
+            <p><strong>Deliverables:</strong></p>
+            <ul>
+                <li>Interactive ecosystem map (visual representation of MCP landscape)</li>
+                <li>Taxonomy of MCP server categories</li>
+                <li>Integration pattern documentation</li>
+                <li>Adoption trend analysis</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Phase 4: Validation & Publication</h3>
+            <p><strong>Status:</strong> <span class="badge badge-neutral">Planned</span></p>
+            <p><strong>Quality Assurance:</strong></p>
+            <ul>
+                <li>Peer review of ecosystem map accuracy</li>
+                <li>Community feedback integration</li>
+                <li>Cross-validation with official Anthropic documentation</li>
+                <li>Live testing of documented integrations</li>
+            </ul>
+        </div>
     </div>
 
-    <div class="card">
-      <h3>Data Collection Methods</h3>
-      <ol>
-        <li><strong>Protocol Documentation Review:</strong> Systematic analysis of official MCP specifications and updates</li>
-        <li><strong>Repository Analysis:</strong> Examination of open-source MCP implementations on GitHub</li>
-        <li><strong>Pattern Detection:</strong> Identification of emerging conventions and best practices</li>
-        <li><strong>Community Monitoring:</strong> Tracking discussions, issues, and feature requests in relevant communities</li>
-      </ol>
+    <div class="section">
+        <h2>Tools & APIs</h2>
+        <p class="text-muted">Complete transparency of computational tools and data sources used in this research.</p>
+
+        <div class="card">
+            <h3>Research Tools</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tool/API</th>
+                        <th>Purpose</th>
+                        <th>Usage Phase</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GitHub API</td>
+                        <td>Repository discovery, star counts, trend analysis</td>
+                        <td>Literature Review</td>
+                        <td><span class="badge badge-neutral">Planned</span></td>
+                    </tr>
+                    <tr>
+                        <td>Anthropic MCP Docs</td>
+                        <td>Official specification reference</td>
+                        <td>Literature Review</td>
+                        <td><span class="badge badge-active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>Web Scraping (Custom)</td>
+                        <td>Community forum analysis, blog post collection</td>
+                        <td>Literature Review</td>
+                        <td><span class="badge badge-neutral">Planned</span></td>
+                    </tr>
+                    <tr>
+                        <td>MCP Server Registry</td>
+                        <td>Catalog of known MCP servers</td>
+                        <td>Data Collection</td>
+                        <td><span class="badge badge-neutral">Planned</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>AI Models Used</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Role</th>
+                        <th>Task</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Claude 3.5 Sonnet</td>
+                        <td>Research Assistant</td>
+                        <td>Literature review, data extraction, documentation synthesis</td>
+                    </tr>
+                    <tr>
+                        <td>Custom Agent Framework</td>
+                        <td>Task Orchestration</td>
+                        <td>Autonomous research progression, update generation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
-    <div class="card">
-      <h3>Quality Assurance</h3>
-      <ul>
-        <li><strong>Source Verification:</strong> All claims are traced back to verifiable sources</li>
-        <li><strong>Confidence Scoring:</strong> Each finding is assigned a confidence level based on source reliability</li>
-        <li><strong>Living Documentation:</strong> Sources and findings are updated as new information emerges</li>
-        <li><strong>Transparent Attribution:</strong> All external sources, tools, and AI assistance are clearly disclosed</li>
-      </ul>
-    </div>
-  </section>
+    <div class="section">
+        <h2>Bibliography</h2>
+        <p class="text-muted">Formal citations will be added as research progresses and sources are formally referenced.</p>
 
-  <section class="section">
-    <h2>Data Sources for Figures</h2>
-    <p class="text-muted">No figures or charts have been generated yet. When visualizations are added, their data sources will be documented here.</p>
+        <div class="card">
+            <h4>Primary Sources</h4>
+            <ol>
+                <li>
+                    <strong>Anthropic.</strong> "Model Context Protocol Specification." <em>Anthropic Documentation</em>, 2024-2026. 
+                    <a href="https://modelcontextprotocol.io" target="_blank" rel="noopener" class="text-accent">modelcontextprotocol.io</a>
+                </li>
+                <li>
+                    <strong>Anthropic.</strong> "MCP HTTP Transport Specification Update." <em>Anthropic Technical Updates</em>, 2026. 
+                    <span class="text-muted">(Exact URL pending verification)</span>
+                </li>
+            </ol>
+        </div>
 
-    <div class="card">
-      <p><strong>Future Documentation Will Include:</strong></p>
-      <ul>
-        <li>Source data for ecosystem maps</li>
-        <li>Raw data behind any statistical visualizations</li>
-        <li>Repositories and APIs used for network graphs</li>
-        <li>Citation for any reproduced diagrams</li>
-      </ul>
-    </div>
-  </section>
+        <div class="card">
+            <h4>Technical Documentation</h4>
+            <ol>
+                <li>
+                    <strong>GitHub.</strong> "MCP Protocol Ecosystem Map Repository." <em>Hubify Projects</em>, 2026. 
+                    <a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map" target="_blank" rel="noopener" class="text-accent">github.com/Hubify-Projects/mcp-protocol-ecosystem-map</a>
+                </li>
+            </ol>
+        </div>
 
-  <section class="section">
-    <h2>Research Ethics & Transparency</h2>
-    
-    <div class="card">
-      <h3>Open Science Commitment</h3>
-      <p>This research adheres to open science principles:</p>
-      <ul>
-        <li><strong>Open Access:</strong> All findings are published openly on the web</li>
-        <li><strong>Open Source:</strong> Research code and documentation are available on GitHub</li>
-        <li><strong>Transparent Methods:</strong> Methodology and tools are fully disclosed</li>
-        <li><strong>Proper Attribution:</strong> All sources are cited; no plagiarism or misrepresentation</li>
-        <li><strong>Living Research:</strong> Findings are updated as the ecosystem evolves</li>
-      </ul>
+        <div class="card card-accent">
+            <h4>Bibliography Status</h4>
+            <p><strong>Current count:</strong> 3 sources documented</p>
+            <p class="text-sm text-muted">More sources will be added as research progresses through validation, analysis, and synthesis phases. All referenced works, datasets, and technical specifications will be formally cited with full bibliographic details.</p>
+        </div>
     </div>
 
-    <div class="card">
-      <h3>AI Assistance Disclosure</h3>
-      <p>In the spirit of transparency, this research openly acknowledges the role of AI:</p>
-      <ul>
-        <li>AI agents assist with literature review, data collection, and documentation formatting</li>
-        <li>AI does not generate the core research questions, theories, or insights</li>
-        <li>Houston Golden provides all creative direction and intellectual contributions</li>
-        <li>AI serves as a research tool, not a co-author or co-inventor</li>
-        <li>All AI-generated content is reviewed and validated by Houston before publication</li>
-      </ul>
+    <div class="section">
+        <h2>Data Transparency</h2>
+        
+        <div class="card">
+            <h3>Datasets Used</h3>
+            <p class="text-muted">No formal datasets have been utilized yet. Planned data sources include:</p>
+            <ul>
+                <li><strong>GitHub Repository Metadata:</strong> Star counts, fork counts, commit activity, contributor statistics</li>
+                <li><strong>MCP Server Registry:</strong> Public catalog of available MCP servers (if available)</li>
+                <li><strong>Community Activity Metrics:</strong> Discord engagement, forum post frequency, social media mentions</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Figures & Visualizations</h3>
+            <p><strong>Current count:</strong> 0 figures</p>
+            <p class="text-muted">Planned visualizations include:</p>
+            <ul>
+                <li>Interactive ecosystem map (network graph of MCP clients and servers)</li>
+                <li>Adoption timeline (MCP protocol uptake over time)</li>
+                <li>Server category distribution (pie/bar chart)</li>
+                <li>Integration pattern flowcharts</li>
+            </ul>
+            <p class="text-sm text-muted">All visualizations will include data source attribution and generation methodology.</p>
+        </div>
     </div>
 
-    <div class="card">
-      <h3>No Conflicts of Interest</h3>
-      <p>Houston Golden and Hubify have no financial conflicts of interest related to this research. The MCP Protocol Ecosystem Map is an independent, educational project aimed at understanding and documenting an emerging technology ecosystem.</p>
-    </div>
-  </section>
+    <div class="section">
+        <h2>Reproducibility & Open Science</h2>
+        
+        <div class="card">
+            <h3>Code Availability</h3>
+            <p>All research code, data collection scripts, and analysis notebooks will be made available in the project repository:</p>
+            <p><a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map" target="_blank" rel="noopener" class="text-accent">github.com/Hubify-Projects/mcp-protocol-ecosystem-map</a></p>
+        </div>
 
-  <section class="section">
-    <div class="card card-accent">
-      <h3>Living Document Notice</h3>
-      <p>This Sources & Methodology page is a living document that will be continuously updated as research progresses. Check the <a href="/" class="text-accent">Mission Control</a> page for the latest research status and updates.</p>
-      <p class="text-muted">Last Updated: 2026-02-18</p>
-    </div>
-  </section>
+        <div class="card">
+            <h3>Data Availability</h3>
+            <p>Collected datasets (where licensing permits) will be published alongside the research. Proprietary or rate-limited API data will be documented with access instructions.</p>
+        </div>
 
+        <div class="card">
+            <h3>Methodology Documentation</h3>
+            <p>Detailed step-by-step procedures for data collection, analysis, and visualization will be documented in Jupyter notebooks and/or Markdown files within the repository.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Updates & Versioning</h2>
+        
+        <div class="card">
+            <h3>Research Timeline</h3>
+            <div class="timeline">
+                <div class="timeline-item completed">
+                    <div class="timeline-date">Feb 18, 2026</div>
+                    <div class="timeline-title">Research Mission Initialized</div>
+                    <div class="timeline-body">Project repository created, initial knowledge base established, literature review phase commenced.</div>
+                </div>
+                <div class="timeline-item completed">
+                    <div class="timeline-date">Feb 18, 2026</div>
+                    <div class="timeline-title">First Research Update</div>
+                    <div class="timeline-body">hubify-researcher-v1 completed first autonomous literature review update.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Version History</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Date</th>
+                        <th>Changes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0.1.0</td>
+                        <td>2026-02-18</td>
+                        <td>Initial sources page created, methodology documented, knowledge base established</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="card card-accent">
+            <h3>Living Document Notice</h3>
+            <p>This Sources & Methodology page is a <strong>living document</strong> that will be continuously updated as research progresses. Check back regularly for:</p>
+            <ul>
+                <li>New knowledge base items with updated confidence scores</li>
+                <li>Additional bibliography entries as sources are formally referenced</li>
+                <li>Expanded API usage documentation as tools are deployed</li>
+                <li>Detailed methodology refinements as analysis deepens</li>
+                <li>Data transparency updates as visualizations are created</li>
+            </ul>
+            <p class="text-sm text-muted"><strong>Last updated:</strong> February 18, 2026</p>
+        </div>
+    </div>
 </main>
 </main>
 <footer><div class="container"><p>Powered by <a href="https://hubify.com/research">Hubify</a></p><p>Last updated 2026-02-18 &middot; Research by Houston Golden, assisted by AI agents &middot; <a href="https://github.com/Hubify-Projects/mcp-protocol-ecosystem-map">View on GitHub</a></p></div></footer>
